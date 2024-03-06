@@ -1,0 +1,267 @@
+{
+  "main": {
+    "id": "e9b3f7b12a1ca25d",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c17c476fcf3b85b",
+        "type": "split",
+        "dimension": 81.54981549815497,
+        "children": [
+          {
+            "id": "152bdd04be52c4dd",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "43300e3bb9489f2f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Безопасность/WiFi/Атаки на протоколы шифрования/WPA & WPA2.md",
+                    "mode": "source",
+                    "source": true
+                  }
+                }
+              },
+              {
+                "id": "095aab310821fca7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Безопасность/WiFi/Вводная теория.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "d18936a8ea24b095",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3ef3cdd60426f81d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Безопасность/WiFi/Атаки на протоколы шифрования/WPA & WPA2.md",
+                    "mode": "preview",
+                    "source": true
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
+      },
+      {
+        "id": "5f1304b177ec29a1",
+        "type": "tabs",
+        "dimension": 18.45018450184502,
+        "children": [
+          {
+            "id": "118b610839d07e22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Безопасность/Сканирование сети/Сканирование сети - основа.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "85ea8410a0ee3dde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Безопасность/Сканирование сети/Сканирование сети - основа.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "93df9bd859bd9092",
+    "type": "split",
+    "children": [
+      {
+        "id": "9886566f513c1cdd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb70872d9f9d1a5d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "de9f264f6dc9267d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9a9f24c005e37e17",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 241.5
+  },
+  "right": {
+    "id": "d28dbf5cf7b7d164",
+    "type": "split",
+    "children": [
+      {
+        "id": "ade5e425aad5c3b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4d80c8a9dca945c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "0c83083eb0897abe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Безопасность/WiFi/Атаки на протоколы шифрования/WPA & WPA2.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9fd4a12915586642",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Безопасность/WiFi/Атаки на протоколы шифрования/WPA & WPA2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6f9f63379a0bb63e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Безопасность/WiFi/Атаки на протоколы шифрования/WPA & WPA2.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 208.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "3ef3cdd60426f81d",
+  "lastOpenFiles": [
+    "Безопасность/WiFi/Вводная теория.md",
+    "Безопасность/WiFi/Атаки на протоколы шифрования/WPA & WPA2.md",
+    "Безопасность/WiFi/Атаки на протоколы шифрования/WEP.md",
+    "Безопасность/WiFi/Атаки на протоколы шифрования",
+    "Безопасность/Сканирование сети/Сканирование сети - основа.md",
+    "Безопасность/WiFi/Deauth атака.md",
+    "Безопасность/WiFi/img/Аутентификация на основе четырёхстороннего рукопожатия.png",
+    "Безопасность/WiFi/img/Аутентификация в сети.png",
+    "Безопасность/WiFi/img",
+    "Безопасность/Сканирование сети/Анализ сетевого трафика.md",
+    "Безопасность/Сканирование сети/Сканирование уязвимостей/Nuclei.md",
+    "Безопасность/WiFi",
+    "OSINT/GEOINT.md",
+    "Безопасность/Сканирование сети/Nmap.md",
+    "Безопасность/Повышение привелегий/Утилиты.md",
+    "Безопасность/Файлы  UNIX.md",
+    "OSINT/Структурный подход к OSINT.md",
+    "OSINT/img",
+    "OSINT/img/Цикл разведки.png",
+    "OSINT",
+    "Безопасность/Сканирование сети/Сканирование уязвимостей/NIKTO.md",
+    "Безопасность/Сканирование сети/Сканирование уязвимостей/JOOMSCAN.md",
+    "Безопасность/Сканирование сети/Сканирование уязвимостей/DROOPESCAN.md",
+    "Безопасность/Сканирование сети/Сканирование уязвимостей/CMSMap.md",
+    "Безопасность/MiTM/MiTM теория.md",
+    "Безопасность/img/etc-passwd.png",
+    "Безопасность/MiTM/img/ARP пакеты.png",
+    "Безопасность/MiTM/img/Пример работы сети в момент атаки.png",
+    "Безопасность/MiTM/img/Пример работы сети в обычной ситуации.png",
+    "Безопасность/MiTM/img",
+    "Безопасность/MiTM/img/ARP атака.png",
+    "Безопасность/Сканирование сети/Сети/Динамическая маршрутизая/Введение.md",
+    "Безопасность/CTF/SSRF.md",
+    "Безопасность/Сканирование сети/Сети/Локальные адреса.md",
+    "Язык разметки.md",
+    "OSINT - Практика. Рождественский мастер-класс..md",
+    "Безопасность/Сканирование сети/Сети/NAT.md",
+    "ARP spoofing.md",
+    "Безопасность/MiTM",
+    "Безопасность/Сканирование сети/Сканирование уязвимостей/JOK3R.md",
+    "Безопасность/img/Nucle консоль.png",
+    "Безопасность/img/Nuclei шаблон.png",
+    "Безопасность/Сканирование сети/Сканирование уязвимостей/WPSCAN.md",
+    "Безопасность/Сканирование сети/Сканирование уязвимостей",
+    "Безопасность/Сканирование сети/Сети/img",
+    "Безопасность/Сканирование сети/Сети/Динамическая маршрутизая"
+  ]
+}
