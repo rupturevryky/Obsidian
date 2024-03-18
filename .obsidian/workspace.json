@@ -6,7 +6,7 @@
       {
         "id": "2c17c476fcf3b85b",
         "type": "split",
-        "dimension": 81.54981549815498,
+        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "152bdd04be52c4dd",
@@ -24,33 +24,8 @@
                     "source": true
                   }
                 }
-              },
-              {
-                "id": "17af1e2895bdd284",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Безопасность/CTF/CSRF/XSS.md",
-                    "mode": "source",
-                    "source": true
-                  }
-                }
-              },
-              {
-                "id": "095aab310821fca7",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Безопасность/WiFi/Вводная теория.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
               }
-            ],
-            "currentTab": 1
+            ]
           },
           {
             "id": "d18936a8ea24b095",
@@ -63,7 +38,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Безопасность/CTF/CSRF/XSS.md",
+                    "file": "Безопасность/Сканирование сети/Подделка пакетов/Scapy.md",
                     "mode": "preview",
                     "source": true
                   }
@@ -73,37 +48,6 @@
           }
         ],
         "direction": "horizontal"
-      },
-      {
-        "id": "5f1304b177ec29a1",
-        "type": "tabs",
-        "dimension": 18.450184501845023,
-        "children": [
-          {
-            "id": "118b610839d07e22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Безопасность/Сканирование сети/Сканирование сети - основа.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "85ea8410a0ee3dde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Безопасность/Сканирование сети/Сканирование сети - основа.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -153,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.5
+    "width": 238.5
   },
   "right": {
     "id": "d28dbf5cf7b7d164",
@@ -180,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Безопасность/CTF/CSRF/XSS.md",
+                "file": "Безопасность/Сканирование сети/Подделка пакетов/Scapy.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -197,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Безопасность/CTF/CSRF/XSS.md",
+                "file": "Безопасность/Сканирование сети/Подделка пакетов/Scapy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Безопасность/CTF/CSRF/XSS.md"
+                "file": "Безопасность/Сканирование сети/Подделка пакетов/Scapy.md"
               }
             }
           }
@@ -232,16 +176,16 @@
   },
   "active": "3ef3cdd60426f81d",
   "lastOpenFiles": [
-    "Безопасность/Сканирование сети/Подделка пакетов/Scapy.md",
     "Безопасность/CTF/CSRF/XSS.md",
+    "Безопасность/WiFi/Вводная теория.md",
+    "Безопасность/Сканирование сети/Подделка пакетов/Scapy.md",
+    "Безопасность/Сканирование сети/Сканирование сети - основа.md",
     "Безопасность/CTF/CSRF",
     "Безопасность/Сканирование сети/Сети/Локальные адреса.md",
     "Безопасность/Сканирование сети/Подделка пакетов",
     "Безопасность/WiFi/Атаки на протоколы шифрования/WPA & WPA2.md",
-    "Безопасность/WiFi/Вводная теория.md",
     "Безопасность/WiFi/Атаки на протоколы шифрования/WEP.md",
     "Безопасность/WiFi/Атаки на протоколы шифрования",
-    "Безопасность/Сканирование сети/Сканирование сети - основа.md",
     "Безопасность/WiFi/Deauth атака.md",
     "Безопасность/WiFi/img/Аутентификация на основе четырёхстороннего рукопожатия.png",
     "Безопасность/WiFi/img/Аутентификация в сети.png",
