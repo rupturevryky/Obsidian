@@ -13,7 +13,10 @@
 ```bush
 gobuster dir -u http://10.10.2.13 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
-
+*Пример для брутфорса sub-domain-а*
+``` 
+gobuster vhost -w /usr/share/wordlists/subdomains-top1million-5000.txt -u http://<url>
+```
 *man gobuster **EXAMPLES**:*
 ```bush
        gobuster dir ‐u https://mysite.com/path/to/folder ‐c ’session=123456’ ‐t 50 ‐w common‐files.txt  ‐x .php,.html
