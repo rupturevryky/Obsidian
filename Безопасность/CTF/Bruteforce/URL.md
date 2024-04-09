@@ -17,6 +17,10 @@ gobuster dir -u http://10.10.2.13 -w /usr/share/wordlists/dirbuster/directory-li
 ``` 
 gobuster vhost -w /usr/share/wordlists/subdomains-top1million-5000.txt -u http://<url>
 ```
+или 
+```
+gobuster dns -w /usr/share/wordlists/dirb/subdomains-top1million-5000.txt -d <domain>
+```
 *man gobuster **EXAMPLES**:*
 ```bush
        gobuster dir ‐u https://mysite.com/path/to/folder ‐c ’session=123456’ ‐t 50 ‐w common‐files.txt  ‐x .php,.html
