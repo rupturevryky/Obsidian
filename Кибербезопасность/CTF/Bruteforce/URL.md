@@ -15,7 +15,7 @@ gobuster dir -u http://10.10.2.13 -w /usr/share/wordlists/dirbuster/directory-li
 ```
 *Пример для брутфорса sub-domain-а*
 ``` 
-gobuster vhost -w /usr/share/wordlists/subdomains-top1million-5000.txt -u http://<url>
+gobuster vhost -w /usr/share/wordlists/subdomains-top1million-5000.txt -u http://<url> --append-domain
 ```
 или 
 ```

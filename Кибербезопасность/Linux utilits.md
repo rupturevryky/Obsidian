@@ -12,7 +12,6 @@
 `evil-winrm` - подключиться к удаённому хосту windows. пример:
 > ``` 
 > evil-winrm -i <ip> -u <username> -p <userpassword>
-> ```
 
 или
 ### impacket
@@ -50,3 +49,20 @@ aws --endpoint=http://s3.<url> s3 cp shell.php s3://<url>
 чтобы скачать что-то на windows, необходимо использовать следующий синтаксис:
 >```
 wget http://<IP/URL>/<file> -outfile <file>
+
+### CURL
+>```
+curl -sX POST <url> # чтобы сделать POST запрос 
+
+## Encrypt
+`based64 -d <text>` - перевести текст в based64 кодировку.
+
+## PDF
+Чтобы создать PDF файл и внедрить в него какие-то данные:
+``` 
+qpdf --empty --add-attachment <some file to implement> --mimetype=text/plain -- <name created file>
+```
+Извлечь ранее внедрённый в PDF файл:
+```
+binwalk -Me <file>
+```
