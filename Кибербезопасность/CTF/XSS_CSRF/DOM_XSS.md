@@ -7,7 +7,7 @@
 ## Open-redirection XSS
 
 1. Может существовать возможность перенаправить пользователя на свой уязвимый ресурс, допусти через query параметр: `../?url=<my.site>`
-## DOM clobbering
+# DOM clobbering
 https://portswigger.net/web-security/dom-based/dom-clobbering
 Если несколько html тегов имеют одинаковые атрибуты, то в window создаётся ключ-коллекция с этим атрибутом. Значит если мы создадим тег с атрибутом, который уже используется в скриптах самим приложением, то сможем проэксплуатировать уязвимость:
 пусть существует js функционал:
@@ -22,3 +22,7 @@ let avatarImgHTML = '<img class="avatar" src="' + (comment.avatar ? escapeHTML(c
 <a id=defaultAvatar><a id=defaultAvatar name=avatar href="cid:&quot;onerror=alert(1)//">
 ```
 где **cid** - спeцсимвол для частного случая, когда можно избежать кодировки ", который оставил разработчик. 
+#### Стандартный пэйлоад:
+```html
+<a id=test1 name=url href=https://portswigger.com><a id=test1>
+```
