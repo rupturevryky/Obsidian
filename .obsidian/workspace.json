@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
+                "file": "Кибербезопасность/CTF/Bruteforce/Пароли.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
+                "file": "Кибербезопасность/CTF/Bruteforce/Пароли.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
+                "file": "Кибербезопасность/CTF/Bruteforce/Пароли.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/CTF/XSS_CSRF/CSRF.md"
+                "file": "Кибербезопасность/CTF/Bruteforce/Пароли.md"
               }
             }
           }
@@ -146,29 +146,30 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "fb70872d9f9d1a5d",
+  "active": "b52dc61f1e90cc86",
   "lastOpenFiles": [
+    "Кибербезопасность/CTF/Bruteforce/URL.md",
+    "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
+    "Кибербезопасность/Linux utilits.md",
+    "Кибербезопасность/CTF/Bruteforce/Пароли.md",
+    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
+    "Кибербезопасность/Сканирование сети/Порты.md",
     "Кибербезопасность/CTF/img/SameSite strict.png",
     "Кибербезопасность/CTF/img/SameSite ограничения.png",
     "Кибербезопасность/CTF/img/SameSite and Origin.png",
-    "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
     "Кибербезопасность/CTF/XSS_CSRF/XSS.md",
     "Кибербезопасность/CTF/Стеганография.md",
     "Кибербезопасность/CTF/SS - server side/SQL injections.md",
     "Кибербезопасность/CTF/SS - server side/SSTI.md",
     "Кибербезопасность/CTF/update shell && creat server.md",
     "Кибербезопасность/CTF/SS - server side",
-    "Кибербезопасность/CTF/Bruteforce/URL.md",
-    "Кибербезопасность/CTF/Bruteforce/Пароли.md",
     "Кибербезопасность/Сканирование сети/Сети/NAT.md",
-    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
     "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
     "Кибербезопасность/Повышение привелегий/Утилиты.md",
     "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
     "Кибербезопасность/Сканирование сети/Сканирование подсети/Базовый пример.md",
     "Кибербезопасность/CTF/XSS_CSRF/DOM_XSS.md",
     "Кибербезопасность/Сканирование сети/Сканирование сети - основа.md",
-    "Кибербезопасность/Сканирование сети/Порты.md",
     "Кибербезопасность/Сканирование сети/Сети/Динамическая маршрутизая/Введение.md",
     "Кибербезопасность/CTF/SS - server side/SSRF.md",
     "Кибербезопасность/CTF/img/CSP директивы.png",
@@ -191,7 +192,6 @@
     "OSINT/img/Pasted image 20240412195839.png",
     "OSINT/img/Pasted image 20240412195654.png",
     "OSINT/img/Pasted image 20240412195257.png",
-    "OSINT/img/Pasted image 20240412194923.png",
     "Безопасность/Сканирование сети/Анализ сетевого трафика/tcpdump.pdf.crdownload",
     "Кибербезопасность/Сканирование сети/Анализ сетевого трафика",
     "Кибербезопасность/Сканирование сети/Сканирование подсети"

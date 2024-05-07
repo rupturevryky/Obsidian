@@ -2,7 +2,7 @@
 ## Навигация
 > 1. [[#gobuster]]
 > 2. [[#wfuzz]]
-
+> 3. feroxbuster
 ***
 ## gobuster
 
