@@ -1,0 +1,21 @@
+# ADB - android debug bredge
+Позволяет взаимодействовать с виртуальным устройством. Если эмулятор android запущен, то `adb` автоматически подключится к нему.
+
+1. `adb root` - дать **права root** утилите adb на android устройстве.
+2. `adb install myApp.apk` - **установить** на android **приложение** .apk .
+3. `adb shell` - **подключиться к эмулятору** устройства.  Необходимо будет иметь состояние root.
+Если прочитать AndroidManefest.xml и найти в нём экспортированные **активити** (**activity**), их можно будет **вызывать принудительно**:
+4. `adb shell am start -n {имя пакета}/.{имя активити}`
+Можно **запустить сервис, отправив данные в интенте**:
+5. `adb shell am startservis -n {имя пакета}/.{имя сервиса} -e "имя парамметра" "значение параммерта" -e "имя парамметра2" "значение2"
+Чтобы **обратиться через `content provider`** по предусмотренному в приложении URL, например `content://myApp.SecretProvider/GetSecret`:
+6. `adb shell content query --uri "content://myApp.SecretProvider/GetSecret/{конкретный id}"` . В таком случае, возможно, можно использовать SQLi. Если внутри "" добавить \\"...\\", можно внедрить SQLi.
+7. `adb logcat` - **Прочитать логи**
+8. `adb push file.txt /{директория для пуша}/file.txt` - запушить файл на устройство
+9. C:\\Users\\Rupturevryky\\AppData\\Local\\Android\\Sdk\\emulator> `.\emulator.exe -writable-system -avd Pixel_3a_API_34` - запустить с возможностью переписывать систему
+# JADX
+позволяет декомпилировать приложение .apk .В графическом интерфейсе просто выбирается .apk файл, в CLI следующая команда:
+1. `jadx myApp.apk`
+# APKTOOL
+1. `apktool d myApp.apk` - декодирование приложения
+	где `d` - decode

