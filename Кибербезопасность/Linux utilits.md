@@ -14,19 +14,13 @@
 ``` 
 evil-winrm -i <ip> -u <username> -p <userpassword>
 ```
-или
+пример с windows:
+```
+evil-winrm -u 'CODEBY\dsemenov' -p '!!!!ilovegood17' -i 192.168.2.4
+```
+где `CODEBY\dsemenov` - {windows domain}\\{userdomain}
 ### impacket
-`impacket/examples`
-```
-python3 psexec.py <login>@{TARGET_IP}
-```
-Атаки на пользователей windows:
-```
-impacket-GetUserSPNs {domain}/{username}:{pass} -dc-ip {IP}
-```
-```
-impacket-Get-GPPPassword {domain}/{username}:{pass}@{IP}
-```
+[[impacket]]
 ## xfreerdp
 Подключение к windows по протоколу RDP:
 ```

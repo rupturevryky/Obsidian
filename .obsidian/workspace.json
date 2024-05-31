@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "b7fccc5e0161378e",
+        "id": "f10065aab1f0635f",
         "type": "tabs",
         "children": [
           {
-            "id": "18281eb53f584964",
+            "id": "e662c03d3cf948f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Android безопасность/TOOLS.md",
-                "mode": "preview",
+                "file": "Кибербезопасность/Сканирование сети/Сетевые атаки/kerbrute.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2082d35f37b0a8c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cf5df245336a3c1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "протоколы",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android безопасность/TOOLS.md",
+                "file": "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Android безопасность/TOOLS.md",
+                "file": "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android безопасность/TOOLS.md"
+                "file": "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md"
               }
             }
           }
@@ -146,32 +171,38 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "18281eb53f584964",
+  "active": "cf5df245336a3c1e",
   "lastOpenFiles": [
-    "Кибербезопасность/Сканирование сети/Сетевые атаки/Nmap.md",
-    "Кибербезопасность/Сканирование сети/Сетевые атаки/Metasploit && msfvenom.md",
-    "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
+    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/kerbrute.md",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/impacket.md",
+    "Кибербезопасность/Linux utilits.md",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/img/Pasted image 20240531151613.png",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/img",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/img/Pasted image 20240531152547.png",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/bloodhound.md",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/Nmap.md",
+    "Стороннее/Docker.md",
+    "Android безопасность/TOOLS.md",
+    "Кибербезопасность/CTF/Bruteforce/Пароли.md",
+    "Кибербезопасность/CTF/SS - server side/SQL injections.md",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/Metasploit && msfvenom.md",
     "Кибербезопасность/CTF/CORS.md",
     "Кибербезопасность/CTF/img/CORS уязвимости.png",
     "Кибербезопасность/CTF/img/Pre-fight Requests.png",
     "Кибербезопасность/CTF/CORS",
     "Кибербезопасность/Сканирование сети/Сетевые атаки",
-    "Кибербезопасность/Linux utilits.md",
-    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
     "Кибербезопасность/Фишинг.md",
     "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
     "Кибербезопасность/Сканирование сети/Сканирование подсети/Проброс трафика.md",
     "Кибербезопасность/Сканирование сети/Сканирование подсети/Базовый пример.md",
     "Стороннее/Криптография - GPG.md",
     "Стороннее/Docker_Command_Cheat_Sheet.pdf",
-    "Стороннее/Docker.md",
     "Стороннее/Теория чисел и современная криптография/Введение - простые числа от Эвклида до Римана.md",
     "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
     "Кибербезопасность/CTF/XSS_CSRF/XSS.md",
-    "Android безопасность/TOOLS.md",
     "Кибербезопасность/CTF/XSS_CSRF/DOM_XSS.md",
-    "Кибербезопасность/CTF/Bruteforce/Пароли.md",
     "Android безопасность",
     "Кибербезопасность/CTF/Bruteforce/URL.md",
     "Кибербезопасность/Сканирование сети/Порты.md",
@@ -179,11 +210,7 @@
     "Кибербезопасность/CTF/img/SameSite ограничения.png",
     "Кибербезопасность/CTF/img/SameSite and Origin.png",
     "Кибербезопасность/CTF/Стеганография.md",
-    "Кибербезопасность/CTF/SS - server side/SQL injections.md",
-    "Кибербезопасность/CTF/SS - server side/SSTI.md",
     "Кибербезопасность/CTF/SS - server side",
-    "Кибербезопасность/Сканирование сети/Сети/NAT.md",
-    "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
     "Кибербезопасность/CTF/img/CSP директивы.png",
     "Кибербезопасность/Сканирование сети/Анализ сетевого трафика/tcpdump.pdf",
     "Стороннее/Docker_Command_Cheat_Sheet.pdf.crdownload",
@@ -191,9 +218,6 @@
     "Стороннее",
     "Без названия.canvas",
     "Кибербезопасность/Сканирование сети/Сканирование подсети/img/Pasted image 20240409145148.png",
-    "Кибербезопасность/Сканирование сети/Сканирование подсети/img",
-    "OSINT/img/Pasted image 20240412201137.png",
-    "OSINT/img/Pasted image 20240412200051.png",
-    "OSINT/img/Pasted image 20240412195839.png"
+    "OSINT/img/Pasted image 20240412201137.png"
   ]
 }
