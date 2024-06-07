@@ -9,3 +9,5 @@ docker start ... # чтобы запустить на фоне
 
 docker exec -it ... bash # получить командную оболочку
 ```
+
+![[Pasted image 20240602175745.png]]
