@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сетевые атаки/kerbrute.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2082d35f37b0a8c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
+                "file": "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
+                "file": "Кибербезопасность/инструментарий.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
+                "file": "Кибербезопасность/инструментарий.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -138,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
+                "file": "Кибербезопасность/инструментарий.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/CTF/update shell && creat server && creat conect.md"
+                "file": "Кибербезопасность/инструментарий.md"
               }
             }
           }
@@ -173,25 +161,26 @@
   },
   "active": "cf5df245336a3c1e",
   "lastOpenFiles": [
+    "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Утилиты.md",
+    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
+    "Кибербезопасность/инструментарий.md",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
+    "Кибербезопасность/Linux utilits.md",
+    "Кибербезопасность/Сканирование сети/Сетевые атаки/kerbrute.md",
+    "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/WPScan.md",
     "Кибербезопасность/CTF/Bruteforce/Словари.md",
     "Кибербезопасность/CTF/Bruteforce/URL.md",
     "Кибербезопасность/CTF/Bruteforce/Пароли.md",
     "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
     "Кибербезопасность/CTF/XSS_CSRF/XSS.md",
-    "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
-    "Кибербезопасность/Повышение привелегий/Утилиты.md",
-    "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
-    "Кибербезопасность/Linux utilits.md",
     "Кибербезопасность/CTF/SS - server side/SSTI.md",
     "Кибербезопасность/CTF/SS - server side/SQL injections.md",
     "Стороннее/Docker.md",
     "Стороннее/img/Pasted image 20240602175745.png",
     "Стороннее/img",
     "OSINT/Telegram расследования.md",
-    "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
-    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
-    "Кибербезопасность/Сканирование сети/Сетевые атаки/kerbrute.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/impacket.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/img/Pasted image 20240531151613.png",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/img",
@@ -207,7 +196,6 @@
     "Кибербезопасность/Сканирование сети/Сетевые атаки",
     "Кибербезопасность/Фишинг.md",
     "Кибербезопасность/Сканирование сети/Сканирование подсети/Проброс трафика.md",
-    "Кибербезопасность/Сканирование сети/Сканирование подсети/Базовый пример.md",
     "Стороннее/img/Docker_Command_Cheat_Sheet.pdf",
     "Android безопасность",
     "Кибербезопасность/CTF/img/SameSite strict.png",
