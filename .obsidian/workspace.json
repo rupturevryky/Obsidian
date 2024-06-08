@@ -37,8 +37,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/WPSCAN.md",
-                "mode": "preview",
+                "file": "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "протоколы",
+                "query": "php -",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/WPSCAN.md",
+                "file": "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/WPSCAN.md",
+                "file": "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/WPSCAN.md"
+                "file": "Кибербезопасность/CTF/update shell && creat server && creat conect.md"
               }
             }
           }
@@ -173,6 +173,18 @@
   },
   "active": "cf5df245336a3c1e",
   "lastOpenFiles": [
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/WPScan.md",
+    "Кибербезопасность/CTF/Bruteforce/Словари.md",
+    "Кибербезопасность/CTF/Bruteforce/URL.md",
+    "Кибербезопасность/CTF/Bruteforce/Пароли.md",
+    "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
+    "Кибербезопасность/CTF/XSS_CSRF/XSS.md",
+    "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
+    "Кибербезопасность/Повышение привелегий/Утилиты.md",
+    "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
+    "Кибербезопасность/Linux utilits.md",
+    "Кибербезопасность/CTF/SS - server side/SSTI.md",
+    "Кибербезопасность/CTF/SS - server side/SQL injections.md",
     "Стороннее/Docker.md",
     "Стороннее/img/Pasted image 20240602175745.png",
     "Стороннее/img",
@@ -181,15 +193,12 @@
     "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/kerbrute.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/impacket.md",
-    "Кибербезопасность/Linux utilits.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/img/Pasted image 20240531151613.png",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/img",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/img/Pasted image 20240531152547.png",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/bloodhound.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/Nmap.md",
     "Android безопасность/TOOLS.md",
-    "Кибербезопасность/CTF/Bruteforce/Пароли.md",
-    "Кибербезопасность/CTF/SS - server side/SQL injections.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/Metasploit && msfvenom.md",
     "Кибербезопасность/CTF/CORS.md",
     "Кибербезопасность/CTF/img/CORS уязвимости.png",
@@ -197,18 +206,10 @@
     "Кибербезопасность/CTF/CORS",
     "Кибербезопасность/Сканирование сети/Сетевые атаки",
     "Кибербезопасность/Фишинг.md",
-    "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
     "Кибербезопасность/Сканирование сети/Сканирование подсети/Проброс трафика.md",
     "Кибербезопасность/Сканирование сети/Сканирование подсети/Базовый пример.md",
-    "Стороннее/Криптография - GPG.md",
     "Стороннее/img/Docker_Command_Cheat_Sheet.pdf",
-    "Стороннее/Теория чисел и современная криптография/Введение - простые числа от Эвклида до Римана.md",
-    "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
-    "Кибербезопасность/CTF/XSS_CSRF/XSS.md",
-    "Кибербезопасность/CTF/XSS_CSRF/DOM_XSS.md",
     "Android безопасность",
-    "Кибербезопасность/CTF/Bruteforce/URL.md",
-    "Кибербезопасность/Сканирование сети/Порты.md",
     "Кибербезопасность/CTF/img/SameSite strict.png",
     "Кибербезопасность/CTF/img/SameSite ограничения.png",
     "Кибербезопасность/CTF/img/SameSite and Origin.png",

