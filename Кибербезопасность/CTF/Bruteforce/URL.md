@@ -108,3 +108,10 @@ dirsearch.py --url|-u http://www.hacktory.lab --extension|-e txt
 Позволят брутфорсить url по ключевым словам. 
 Предустановленная папка: `/usr/share/wordlists/wfuzz/`
 
+```
+wfuzz -c -t 1 --hc 403,404 -w wordList.txt {URL}/FUZZ.php
+```
+`-c` - цветной вывод 
+`-t` - количество потоков
+`--hc` - не выводить определённые результаты
+`FUZZ` - место для подстановки слов из словаря

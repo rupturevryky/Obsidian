@@ -64,6 +64,12 @@ wget http://<IP/URL>/<file> -outfile <file>
 ```
 curl -sX POST <url> # чтобы сделать POST запрос 
 ```
+```
+curl <url> --data "..."
+```
+>`--data` - указывает post параметры 
+>>пример для `...` : 
+>>`admin=1&message=Hello` или json `{'admin':'1','message':'Hello'}`
 ## Encrypt
 `based64 -d <text>` - перевести текст в based64 кодировку.
 
