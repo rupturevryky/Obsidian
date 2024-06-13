@@ -1,4 +1,6 @@
-# ADB - android debug bredge
+# Инструментарий 
+![[Кибербезопасность/инструментарий#Реверс-инжиниринг#Декомпиляторы для программ на Java и под Android|инструментарий]]
+## ADB - android debug bredge
 Позволяет взаимодействовать с виртуальным устройством. Если эмулятор android запущен, то `adb` автоматически подключится к нему.
 
 1. `adb root` - дать **права root** утилите adb на android устройстве.
@@ -13,9 +15,9 @@
 7. `adb logcat` - **Прочитать логи**
 8. `adb push file.txt /{директория для пуша}/file.txt` - запушить файл на устройство
 9. C:\\Users\\Rupturevryky\\AppData\\Local\\Android\\Sdk\\emulator> `.\emulator.exe -writable-system -avd Pixel_3a_API_34` - запустить с возможностью переписывать систему
-# JADX
+## JADX
 позволяет декомпилировать приложение .apk .В графическом интерфейсе просто выбирается .apk файл, в CLI следующая команда:
 1. `jadx myApp.apk`
-# APKTOOL
+## APKTOOL
 1. `apktool d myApp.apk` - декодирование приложения
 	где `d` - decode

