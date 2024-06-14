@@ -4,33 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "98274c02fb474a59",
+        "id": "b833648fa365656f",
         "type": "tabs",
         "children": [
           {
-            "id": "359d7e0f68326e9a",
+            "id": "6075db019b1f4e7d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сети/API.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2f5ca96dbed7e87a",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png",
+                "file": "Кибербезопасность/Инструментарий.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -124,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png",
+                "file": "Кибербезопасность/Инструментарий.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png"
+                "file": "Кибербезопасность/Инструментарий.md"
               }
             }
           }
@@ -159,52 +144,53 @@
   },
   "active": "fb70872d9f9d1a5d",
   "lastOpenFiles": [
-    "Кибербезопасность/CTF/SS - server side/GraphQL.md",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614202303.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614202241.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614202113.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614202005.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201918.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201909.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201827.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614195744.png",
-    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614195358.png",
+    "Кибербезопасность/DevOps/Linux utilits.md",
+    "Кибербезопасность/DevOps/Файлы  UNIX.md",
+    "Кибербезопасность/DevOps",
+    "Кибербезопасность/Стеганография.md",
+    "Кибербезопасность/MiTM/MiTM теория.md",
+    "Кибербезопасность/CS - client side/CORS.md",
+    "Кибербезопасность/Фишинг.md",
+    "Кибербезопасность/assets/CORS уязвимости.png",
+    "Кибербезопасность/DevOps/update shell && creat server && creat conect.md",
     "Кибербезопасность/Сканирование сети/Сети/API.md",
-    "Кибербезопасность/CTF/SS - server side/assets",
-    "Кибербезопасность/CTF/CORS.md",
-    "Кибербезопасность/CTF/SS - server side/SSRF.md",
+    "OSINT/Telegram расследования.md",
+    "OSINT/GEOINT.md",
+    "OSINT/Структурный подход к OSINT.md",
+    "OSINT/Поиск по username-у.md",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614201757.png",
+    "Кибербезопасность/SS - server side/GraphQL.md",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614202303.png",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614202241.png",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614202113.png",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614202005.png",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614201918.png",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614201909.png",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614201827.png",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240614195744.png",
+    "Кибербезопасность/SS - server side/assets",
+    "Кибербезопасность/SS - server side/SSRF.md",
     "Кибербезопасность/Реверс инженеринг/Введение.md",
     "Кибербезопасность/Реверс инженеринг/Инструментарий.md",
     "Android безопасность/TOOLS.md",
-    "Кибербезопасность/инструментарий.md",
+    "Кибербезопасность/Инструментарий.md",
     "Стороннее/Криптография - GPG.md",
     "Кибербезопасность/Реверс инженеринг/assets",
     "Кибербезопасность/Реверс инженеринг/Без названия.canvas",
     "Кибербезопасность/Реверс инженеринг",
     "Кибербезопасность/Сканирование сети/Сети/Сканирование сети - основа.md",
     "Кибербезопасность/Сканирование сети/Сети/Порты.md",
-    "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
     "Кибербезопасность/Сканирование сети/Анализ сетевого трафика/tcpdump.pdf",
-    "Кибербезопасность/CTF/CS - client side/CSRF.md",
-    "Кибербезопасность/CTF/CS - client side/DOM_XSS.md",
-    "Кибербезопасность/CTF/CS - client side/XSS.md",
-    "Кибербезопасность/CTF/Bruteforce/Пароли.md",
+    "Кибербезопасность/CS - client side/CSRF.md",
+    "Кибербезопасность/CS - client side/DOM_XSS.md",
+    "Кибербезопасность/CS - client side/XSS.md",
+    "Кибербезопасность/Bruteforce/Пароли.md",
     "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/WPScan.md",
-    "Кибербезопасность/CTF/Bruteforce/URL.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Whatweb.md",
-    "Кибербезопасность/Linux utilits.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Утилиты.md",
-    "Кибербезопасность/Сканирование сети/Сканирование подсети/Базовый пример.md",
-    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
-    "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
     "Стороннее/assets",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/assets",
     "Кибербезопасность/CTF/CORS",
     "Кибербезопасность/Сканирование сети/Сетевые атаки",
     "Стороннее/assets/Docker_Command_Cheat_Sheet.pdf",
-    "Android безопасность",
     "Без названия.canvas"
   ]
 }
