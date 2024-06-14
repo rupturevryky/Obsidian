@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/Реверс инженеринг/Введение.md",
-                "mode": "preview",
+                "file": "Кибербезопасность/Сканирование сети/Сети/API.md",
+                "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "2f5ca96dbed7e87a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/Реверс инженеринг/Введение.md",
+                "file": "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/Реверс инженеринг/Введение.md",
+                "file": "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/Реверс инженеринг/Введение.md"
+                "file": "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png"
               }
             }
           }
@@ -146,23 +157,28 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "359d7e0f68326e9a",
+  "active": "fb70872d9f9d1a5d",
   "lastOpenFiles": [
+    "Кибербезопасность/CTF/SS - server side/GraphQL.md",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614202303.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614202241.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614202113.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614202005.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201918.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201909.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201827.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614201757.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614195744.png",
+    "Кибербезопасность/CTF/SS - server side/assets/Pasted image 20240614195358.png",
+    "Кибербезопасность/Сканирование сети/Сети/API.md",
+    "Кибербезопасность/CTF/SS - server side/assets",
+    "Кибербезопасность/CTF/CORS.md",
+    "Кибербезопасность/CTF/SS - server side/SSRF.md",
+    "Кибербезопасность/Реверс инженеринг/Введение.md",
     "Кибербезопасность/Реверс инженеринг/Инструментарий.md",
     "Android безопасность/TOOLS.md",
     "Кибербезопасность/инструментарий.md",
-    "Кибербезопасность/Реверс инженеринг/Введение.md",
     "Стороннее/Криптография - GPG.md",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613152056.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613152141.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613152111.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613151634.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613151955.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613151934.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613151924.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613151920.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613151844.png",
-    "Кибербезопасность/Реверс инженеринг/assets/Pasted image 20240613151830.png",
     "Кибербезопасность/Реверс инженеринг/assets",
     "Кибербезопасность/Реверс инженеринг/Без названия.canvas",
     "Кибербезопасность/Реверс инженеринг",
@@ -170,11 +186,10 @@
     "Кибербезопасность/Сканирование сети/Сети/Порты.md",
     "Кибербезопасность/CTF/update shell && creat server && creat conect.md",
     "Кибербезопасность/Сканирование сети/Анализ сетевого трафика/tcpdump.pdf",
-    "Кибербезопасность/CTF/XSS_CSRF/CSRF.md",
-    "Кибербезопасность/CTF/XSS_CSRF/DOM_XSS.md",
-    "Кибербезопасность/CTF/XSS_CSRF/XSS.md",
+    "Кибербезопасность/CTF/CS - client side/CSRF.md",
+    "Кибербезопасность/CTF/CS - client side/DOM_XSS.md",
+    "Кибербезопасность/CTF/CS - client side/XSS.md",
     "Кибербезопасность/CTF/Bruteforce/Пароли.md",
-    "Кибербезопасность/CTF/SS - server side/SSRF.md",
     "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/WPScan.md",
     "Кибербезопасность/CTF/Bruteforce/URL.md",
@@ -184,17 +199,12 @@
     "Кибербезопасность/Сканирование сети/Сканирование подсети/Базовый пример.md",
     "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/Crackmapexec.md",
-    "Кибербезопасность/Сканирование сети/Сетевые атаки/kerbrute.md",
-    "Кибербезопасность/CTF/Bruteforce/Словари.md",
-    "Кибербезопасность/CTF/SS - server side/SSTI.md",
-    "Кибербезопасность/CTF/SS - server side/SQL injections.md",
     "Стороннее/assets",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/assets",
     "Кибербезопасность/CTF/CORS",
     "Кибербезопасность/Сканирование сети/Сетевые атаки",
     "Стороннее/assets/Docker_Command_Cheat_Sheet.pdf",
     "Android безопасность",
-    "Кибербезопасность/CTF/SS - server side",
     "Без названия.canvas"
   ]
 }
