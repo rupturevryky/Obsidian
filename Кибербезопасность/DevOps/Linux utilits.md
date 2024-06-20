@@ -86,3 +86,23 @@ binwalk -Me <file>
 ```
 evince file.pdf
 ```
+
+# ZIP
+Чтобы открыть `zip` по `паролю` и` shasum-е`, при `sha-256` == `307744fa0ae574756157a4607e307492141fdf1f000f6289eab4a8741729469c`
+```shell
+echo -n "307744fa0ae574756157a4607e307492141fdf1f000f6289eab4a8741729469c  name.zip" | sha256sum -c
+```
+Подбор утилиты для открытия по паролю:
+```shell
+unzip -P "password" name.zip
+```
+```shell
+7z x -ppassword name.zip
+```
+
+# Бинарные файлы
+
+Проверить настройки бинарной безопасности:
+``` 
+checksec myFile
+```
