@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/Инструментарий.md",
+                "file": "Кибербезопасность/SS - server side/File upload.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/Инструментарий.md",
+                "file": "Кибербезопасность/SS - server side/File upload.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/Инструментарий.md",
+                "file": "Кибербезопасность/SS - server side/File upload.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/Инструментарий.md"
+                "file": "Кибербезопасность/SS - server side/File upload.md"
               }
             }
           }
@@ -148,18 +148,23 @@
   },
   "active": "6075db019b1f4e7d",
   "lastOpenFiles": [
+    "Кибербезопасность/Сканирование сети/Сети/Порты.md",
+    "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
+    "Кибербезопасность/Сканирование сети/Сети/Сканирование сети - основа.md",
+    "Кибербезопасность/SS - server side/File upload.md",
+    "Кибербезопасность/SS - server side/assets/Pasted image 20240624020213.png",
+    "Кибербезопасность/Стеганография.md",
+    "Кибербезопасность/Инструментарий.md",
     "Кибербезопасность/Reverse инженеринг/Инструментарий.md",
     "Кибербезопасность/Reverse инженеринг/Введение.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Утилиты.md",
     "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
-    "Кибербезопасность/Инструментарий.md",
     "Кибербезопасность/DevOps/Linux utilits.md",
     "Кибербезопасность/MiTM/MiTM теория.md",
     "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
     "Кибербезопасность/Bruteforce/URL.md",
     "Кибербезопасность/Bruteforce/Пароли.md",
     "Кибербезопасность/DevOps/update shell && creat server && creat conect.md",
-    "Кибербезопасность/Сканирование сети/Сети/Сканирование сети - основа.md",
     "Кибербезопасность/CS - client side/CSRF.md",
     "Кибербезопасность/CS - client side/CORS.md",
     "Кибербезопасность/SS - server side/SSTI.md",
@@ -167,16 +172,12 @@
     "Кибербезопасность/SS - server side/SQL injections.md",
     "Кибербезопасность/DevOps/Файлы  UNIX.md",
     "Кибербезопасность/DevOps",
-    "Кибербезопасность/Стеганография.md",
     "Кибербезопасность/Фишинг.md",
     "Кибербезопасность/assets/CORS уязвимости.png",
     "Кибербезопасность/Сканирование сети/Сети/API.md",
     "OSINT/Telegram расследования.md",
     "OSINT/GEOINT.md",
-    "OSINT/Структурный подход к OSINT.md",
-    "OSINT/Поиск по username-у.md",
     "Кибербезопасность/SS - server side/assets/Pasted image 20240614201757.png",
-    "Кибербезопасность/SS - server side/GraphQL.md",
     "Кибербезопасность/SS - server side/assets/Pasted image 20240614202303.png",
     "Кибербезопасность/SS - server side/assets/Pasted image 20240614202241.png",
     "Кибербезопасность/SS - server side/assets/Pasted image 20240614202113.png",
@@ -184,7 +185,6 @@
     "Кибербезопасность/SS - server side/assets/Pasted image 20240614201918.png",
     "Кибербезопасность/SS - server side/assets/Pasted image 20240614201909.png",
     "Кибербезопасность/SS - server side/assets/Pasted image 20240614201827.png",
-    "Кибербезопасность/SS - server side/assets/Pasted image 20240614195744.png",
     "Кибербезопасность/SS - server side/assets",
     "Кибербезопасность/Reverse инженеринг/assets",
     "Кибербезопасность/Реверс инженеринг/Без названия.canvas",
