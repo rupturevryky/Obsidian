@@ -12,7 +12,7 @@ theHarvester -d microsoft.com --dns-server 8.8.8.8 -b linkedin
 
 `-d` — указывает целевую организацию с помощью доменного имени.
 `--dns-server` — позволяет указать DNS-сервер для всех DNS-запросов.
-`-b` — указывает источник для получения информации: **baidu**, **bing**, **bingapi**, **dogpile**,**google**, **googleCSE**, **googleplus**, **google-profiles**, **linkedin**, **pgp**, **twitter**, **vhost**, **yahoo**, **all**
+`-b` — указывает источник для получения информации: **baidu**, **bing**, **bingapi**, **dogpile**, **google**, **googleCSE**, **googleplus**, **google-profiles**, **linkedin**, **pgp**, **twitter**, **vhost**, **yahoo**, **all**
    Другие параметры:
 
 `-s` — начать с результата под номером X (по умолчанию: 0)
@@ -27,48 +27,48 @@ theHarvester -d microsoft.com --dns-server 8.8.8.8 -b linkedin
 # Модули 
 Модули инструмента можно разделить на активные и пассивные.
 **Пассивные**:
-anubis - https://github.com/jonluca/anubis
-bevigil - https://bevigil.com/osint-api
-baidu - www.baidu.com
-binaryedge - https://www.binaryedge.io
-bing - https://www.bing.com
-bingapi
-brave - https://search.brave.com/
-bufferoverun - https://tls.bufferover.run
-censys - https://censys.io
-certspotter - https://sslmate.com/certspotter/
-criminalip - https://www.criminalip.io
-crtsh - https://crt.sh (поиск по сертификатам)
-dnsdumpster - https://dnsdumpster.com
-duckduckgo - https://duckduckgo.com
-fullhunt - https://fullhunt.io
-github-code - www.github.com
-hackertarget - https://hackertarget.com
-hunter - https://hunter.io
-hunterhow - https://hunter.how
-intelx - http://intelx.io
-netlas - https://app.netlas.io
-onyphe - https://www.onyphe.io/
-otx - https://otx.alienvault.com
-pentestTools - https://pentest-tools.com/
-projecDiscovery - https://chaos.projectdiscovery.io
-rapiddns - https://rapiddns.io
-rocketreach - https://rocketreach.co
-securityTrails - https://securitytrails.com
--s, --shodan - https://shodan.io
-sitedossier - http://www.sitedossier.com
-subdomaincenter - https://www.subdomain.center/ (поиск поддоменов)
-subdomainfinderc99 - https://subdomainfinder.c99.nl (поиск поддоменов)
-threatminer - https://www.threatminer.org/
-tomba - https://tomba.io
-urlscan - https://urlscan.io
-vhost
-virustotal - https://www.virustotal.com
-yahoo
-zoomeye - https://www.zoomeye.org
+- anubis - https://github.com/jonluca/anubis
+- bevigil - https://bevigil.com/osint-api
+- baidu - www.baidu.com
+- binaryedge - https://www.binaryedge.io
+- bing - https://www.bing.com
+- bingapi
+- brave - https://search.brave.com/
+- bufferoverun - https://tls.bufferover.run
+- censys - https://censys.io
+- certspotter - https://sslmate.com/certspotter/
+- criminalip - https://www.criminalip.io
+- crtsh - https://crt.sh (поиск по сертификатам)
+- dnsdumpster - https://dnsdumpster.com
+- duckduckgo - https://duckduckgo.com
+- fullhunt - https://fullhunt.io
+- github-code - www.github.com
+- hackertarget - https://hackertarget.com
+- hunter - https://hunter.io
+- hunterhow - https://hunter.how
+- intelx - http://intelx.io
+- netlas - https://app.netlas.io
+- onyphe - https://www.onyphe.io/
+- otx - https://otx.alienvault.com
+- pentestTools - https://pentest-tools.com/
+- projecDiscovery - https://chaos.projectdiscovery.io
+- rapiddns - https://rapiddns.io
+- rocketreach - https://rocketreach.co
+- securityTrails - https://securitytrails.com
+- -s, --shodan - https://shodan.io
+- sitedossier - http://www.sitedossier.com
+- subdomaincenter - https://www.subdomain.center/ (поиск поддоменов)
+- subdomainfinderc99 - https://subdomainfinder.c99.nl (поиск поддоменов)
+- threatminer - https://www.threatminer.org/
+- tomba - https://tomba.io
+- urlscan - https://urlscan.io
+- vhost
+- virustotal - https://www.virustotal.com
+- yahoo
+- zoomeye - https://www.zoomeye.org
 
 **Активные**:
-- DNS brute force
+- DNS bruteforce
 - Screenshots - найденых поддоменов
 
 Теперь попробуем найти поддомены с помощью поисковой системы Bing:
@@ -98,6 +98,7 @@ theHarvester -d microsoft.com -b bing
 - tomba
 - zoomeye
 - bevigil
+
 Как вы видите, инструмент можно использовать для сбора данных как о сотрудниках, так и информацию об инфраструктуре организации, такая как поддомены и IP-адреса. Тулза часто используется для быстрого сбора данных об организации.
 
 
