@@ -25,7 +25,9 @@ theHarvester -d microsoft.com --dns-server 8.8.8.8 -b linkedin
 `-l` — ограничить количество результатов для работы (bing идёт от 50 до 50 результатов, google с 100 до 100, а pgp не использует эту опцию).
 
 # Модули 
+
 Модули инструмента можно разделить на активные и пассивные.
+
 **Пассивные**:
 - anubis - https://github.com/jonluca/anubis
 - bevigil - https://bevigil.com/osint-api
