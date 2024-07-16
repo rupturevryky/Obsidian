@@ -19,14 +19,13 @@ evil-winrm -i <ip> -u <username> -p <userpassword>
 evil-winrm -u 'CODEBY\dsemenov' -p '!!!!ilovegood17' -i 192.168.2.4
 ```
 где `CODEBY\dsemenov` - {windows domain}\\{userdomain}
-### impacket
-[[impacket]]
-## xfreerdp
-Подключение к windows по протоколу RDP:
-```
-xfreerdp /u:username /p:"password" /v:"IP"
-y
-```
+
+### [[Протоколы#SSH]]
+
+### [[Протоколы#SMB]]
+
+### [[Протоколы#RDP]]
+### [[impacket]]
  
 ## WEB
 
@@ -106,3 +105,7 @@ unzip -P "password" name.zip
 ``` 
 checksec myFile
 ```
+
+# Управление пакетами
+
+[[Администрирование Linux#Управление пакетами]]
