@@ -11,11 +11,9 @@
             "id": "3dd66fcff0cb0b19",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сети/Порты.md",
-                "mode": "source",
-                "source": false
+                "file": "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png"
               }
             }
           },
@@ -25,9 +23,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/DevOps/Работа с сервисами.md",
+                "file": "Кибербезопасность/DevOps/iptables & fail2ban.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "a9270eb6590423b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Кибербезопасность/Bruteforce/Пароли.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
@@ -108,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сети/Порты.md",
+                "file": "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -125,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сети/Порты.md",
+                "file": "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сети/Порты.md"
+                "file": "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png"
               }
             }
           }
@@ -158,23 +168,25 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "3dd66fcff0cb0b19",
+  "active": "fb70872d9f9d1a5d",
   "lastOpenFiles": [
     "Кибербезопасность/DevOps/Администрирование Linux.md",
-    "Кибербезопасность/DevOps/Работа с сервисами.md",
-    "Кибербезопасность/DevOps/Передача файлов.md",
+    "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png",
+    "Кибербезопасность/DevOps/assets/Pasted image 20240718190631.png",
+    "Кибербезопасность/DevOps/assets/Pasted image 20240718180611.png",
+    "Кибербезопасность/DevOps/assets/Pasted image 20240718175256.png",
+    "Кибербезопасность/DevOps/assets/Pasted image 20240718180048.png",
+    "Кибербезопасность/DevOps/assets/Pasted image 20240718180007.png",
+    "Кибербезопасность/DevOps/Pasted image 20240718175822.png",
+    "Кибербезопасность/DevOps/assets/Pasted image 20240718175724.png",
+    "Кибербезопасность/DevOps/Pasted image 20240718175820.png",
+    "Кибербезопасность/DevOps/assets/Pasted image 20240718175426.png",
     "Кибербезопасность/DevOps/Web-сервисы.md",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716222611.png",
+    "Кибербезопасность/DevOps/iptables & fail2ban.md",
+    "Кибербезопасность/DevOps/Работа с сервисами.md",
+    "Кибербезопасность/Bruteforce/Пароли.md",
+    "Кибербезопасность/DevOps/Передача файлов.md",
     "Кибербезопасность/Сканирование сети/Сети/Порты.md",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716221048.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716084048.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716084039.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716083952.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716083930.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716083652.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716083640.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716083608.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240716083521.png",
     "Кибербезопасность/DevOps/Linux utilits.md",
     "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
     "Кибербезопасность/Сетевые атаки/xfreedp.md",
@@ -194,8 +206,6 @@
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Инструментарий.md",
     "Кибербезопасность/SS - server side/SSRF.md",
     "Кибербезопасность/SS - server side/SQL injections.md",
-    "Кибербезопасность/SS - server side/GraphQL.md",
-    "Кибербезопасность/Стеганография.md",
     "Кибербезопасность/Сканирование сети/Разведка/assets",
     "Кибербезопасность/Сканирование сети/Разведка",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/Альтернативы Nmap/Без названия",
