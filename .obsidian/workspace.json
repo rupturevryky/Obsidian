@@ -4,40 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "ee5cc77069018169",
+        "id": "576451cff2cd42bc",
         "type": "tabs",
         "children": [
           {
-            "id": "3dd66fcff0cb0b19",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png"
-              }
-            }
-          },
-          {
-            "id": "3050191e48f5503b",
+            "id": "242e2f2eb3467f8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/DevOps/iptables & fail2ban.md",
+                "file": "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "d20f1dd9ce1e732a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Кибербезопасность/DevOps/Администрирование Linux.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "a9270eb6590423b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Кибербезопасность/Bruteforce/Пароли.md",
-                "mode": "source",
-                "source": true
               }
             }
           }
@@ -70,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cron",
+                "query": "PDF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png",
+                "file": "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -135,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png",
+                "file": "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png"
+                "file": "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md.md"
               }
             }
           }
@@ -168,44 +158,47 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "fb70872d9f9d1a5d",
+  "active": "242e2f2eb3467f8f",
   "lastOpenFiles": [
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726220107.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726213225.png",
+    "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md.md",
     "Кибербезопасность/DevOps/Администрирование Linux.md",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240718190729.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240718190631.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240718180611.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240718175256.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240718180048.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240718180007.png",
-    "Кибербезопасность/DevOps/Pasted image 20240718175822.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240718175724.png",
-    "Кибербезопасность/DevOps/Pasted image 20240718175820.png",
-    "Кибербезопасность/DevOps/assets/Pasted image 20240718175426.png",
-    "Кибербезопасность/DevOps/Web-сервисы.md",
-    "Кибербезопасность/DevOps/iptables & fail2ban.md",
-    "Кибербезопасность/DevOps/Работа с сервисами.md",
-    "Кибербезопасность/Bruteforce/Пароли.md",
-    "Кибербезопасность/DevOps/Передача файлов.md",
-    "Кибербезопасность/Сканирование сети/Сети/Порты.md",
+    "Кибербезопасность/DevOps/shool_21",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726153339.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726213120.png",
+    "Pasted image 20240726212412.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726212514.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726212250.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726211345.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726210705.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726210427.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1/Pasted image 20240726202817.png",
+    "Кибербезопасность/Сетевые атаки/impacket.md",
+    "Кибербезопасность/Сетевые атаки/Crackmapexec.md",
+    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1",
     "Кибербезопасность/DevOps/Linux utilits.md",
     "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
-    "Кибербезопасность/Сетевые атаки/xfreedp.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Инструментарий.md",
+    "Кибербезопасность/DevOps/Передача файлов.md",
+    "Кибербезопасность/DevOps/Web-сервисы.md",
+    "Кибербезопасность/DevOps/Работа с сервисами.md",
     "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
+    "Кибербезопасность/Сканирование сети/Сети/Порты.md",
+    "Кибербезопасность/Сетевые атаки/Nmap.md",
+    "Кибербезопасность/Сетевые атаки/Альтернативы Nmap/Advanced-ip-scanner.md",
+    "Кибербезопасность/Сетевые атаки/Альтернативы Nmap/Angry IP Scanner.md",
+    "Кибербезопасность/Bruteforce/Пароли.md",
+    "Кибербезопасность/DevOps/iptables & fail2ban.md",
+    "Кибербезопасность/Сетевые атаки/xfreedp.md",
     "Кибербезопасность/DevOps/Pasted image 20240714152027.png.md",
     "Кибербезопасность/DevOps/Файлы  UNIX.md",
     "Кибербезопасность/DevOps/assets",
     "Кибербезопасность/DevOps/update shell && create server && create connect.md",
-    "Кибербезопасность/Сетевые атаки/impacket.md",
     "Кибербезопасность/Сканирование сети/Разведка/theHarvester.md",
     "Кибербезопасность/Сканирование сети/Разведка/определение всей зоны DNS.md",
-    "Кибербезопасность/Сетевые атаки/Crackmapexec.md",
     "Кибербезопасность/Сетевые атаки/mitm6.md",
     "Кибербезопасность/Сетевые атаки/Responder.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Введение.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/network scanners/JOK3R.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Инструментарий.md",
-    "Кибербезопасность/SS - server side/SSRF.md",
-    "Кибербезопасность/SS - server side/SQL injections.md",
     "Кибербезопасность/Сканирование сети/Разведка/assets",
     "Кибербезопасность/Сканирование сети/Разведка",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/Альтернативы Nmap/Без названия",
@@ -213,8 +206,6 @@
     "Кибербезопасность/Сетевые атаки/Альтернативы Nmap",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Mobile scanners",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/K8s scanners",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/network scanners",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners",
     "Кибербезопасность/Реверс инженеринг/Без названия.canvas",
     "Без названия.canvas"
   ]
