@@ -124,7 +124,7 @@
 		    nameservers:
 		      addresses: [10.0.2.2, 1.1.1.1, 8.8.8.8]
 		 ```
-		![[Pasted image 20240725151511.png]]
+		![[./assets_D01_Linux-1/Pasted image 20240725151511.png]]
 		 ```
 		 reboot 
 		```
