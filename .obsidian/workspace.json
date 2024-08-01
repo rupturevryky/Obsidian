@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
-                "mode": "preview",
-                "source": true
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -184,21 +184,20 @@
   },
   "active": "c0f466d44bc8810c",
   "lastOpenFiles": [
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730221130.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730220555.png",
+    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240801212608.png",
+    "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
+    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240801212307.png",
+    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240801211537.png",
+    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240801210302.png",
+    "Кибербезопасность/DevOps/shool_21/Pasted image 20240801204238.png",
+    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240801162904.png",
+    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240801203556.png",
+    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240801203422.png",
+    "Кибербезопасность/DevOps/shool_21/Pasted image 20240801202655.png",
+    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240801203226.png",
     "Кибербезопасность/Сетевые атаки/Nmap.md",
     "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
-    "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730215501.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730215330.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730214454.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730214406.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730214303.png",
     "Кибербезопасность/DevOps/shool_21/Pasted image 20240730213618.png.md",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730213618.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730212925.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730212636.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240730212607.png",
     "Кибербезопасность/DevOps/iptables & fail2ban.md",
     "Кибербезопасность/DevOps/Администрирование Linux.md",
     "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md",
