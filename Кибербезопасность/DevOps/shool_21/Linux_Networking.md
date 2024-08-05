@@ -458,3 +458,75 @@ tcpdump -tnv -r dump.pcap
 ---
 
 ## Part 6. Динамическая настройка IP с помощью **DHCP**
+
+Сначала пришлось установить `isc-dhcp-server`:
+   ```shell
+   sudo apt update; sudo apt install isc-dhcp-server -y
+   ```
+   
+1. **Для `r2` настроим в файле `/etc/dhcp/dhcpd.conf` конфигурацию службы DHCP:**
+
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804155654.png]]
+
+2. **В файле `resolv.conf` прописать `nameserver 8.8.8.8`:**
+
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804152152.png]]
+
+   Перезапустим службу **DHCP** на **r2**:
+   ```
+   systemctl restart isc-dhcp-server
+   ```
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804160729.png]]
+   
+   А также **ws21**:
+   ```
+   reboot
+   ```
+   Адрес на **ws21** не изменится до тех пор, пока на самой машине стоит статический адрес, это нужно изменить. Редактирую файл `/etc/netplan/00-installer-config.yaml` и сохраняю:
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804161405.png]]
+
+   `ping ws21 -> ws22`:
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804161646.png]]
+
+   Указать **MAC** адрес у `ws11`, для этого в `etc/netplan/00-installer-config.yaml`. Необходимо добавить строки: `macaddress: 10:10:10:10:10:BA`, `dhcp4: true`:
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804162127.png]]
+   
+   Для `r1` настройки аналогичные `r2`, но сделать выдачу адресов с жесткой привязкой к **MAC**-адресу (`ws11`):
+   
+   - `/etc/dhcp/dhcpd.conf`:
+     
+     ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804180212.png]]
+
+   - Перезапустим службу **DHCP** на **r1**:
+   ```
+   systemctl restart isc-dhcp-server
+   ```
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804160729.png]]
+
+   - Перезапустим **ws11**: `reboot/sudo dhclient -r; sudo dhclient -v`:
+     
+     ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805031135.png]]
+
+   - `ping ws21 -> ws11`:
+     
+    ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805031325.png]] 
+
+- Запрос с `ws21` обновление **ip** адреса:
+  ```shell
+   sudo dhclient -r
+   sudo dhclient
+   ```
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804173118.png]]
+   (используя повторно)
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240804173408.png]]
+   
+   - **`sudo dhclient -r`**: Эта команда освобождает текущий IP-адрес, полученный от DHCP-сервера. Это полезно, если вы хотите полностью сбросить настройки.
+   - **`sudo dhclient`**: Эта команда отправляет запрос на получение нового IP-адреса от DHCP-сервера
+
+---
+
+## Part 7. **NAT**
