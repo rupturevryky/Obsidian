@@ -508,7 +508,7 @@ tcpdump -tnv -r dump.pcap
 
    - Перезапустим **ws11**: `reboot/sudo dhclient -r; sudo dhclient -v`:
      
-     ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805031135.png]]
+     ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805192822.png]]
 
    - `ping ws21 -> ws11`:
      
@@ -530,3 +530,59 @@ tcpdump -tnv -r dump.pcap
 ---
 
 ## Part 7. **NAT**
+
+В файле `/etc/apache2/ports.conf` на **ws22** и **r1** изменить строку `Listen 80` на `Listen 0.0.0.0:80`, то есть сделай сервер **Apache2** общедоступным:
+
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805200053.png]]
+
+Запустить веб-сервер Apache:
+```shell
+sudo service apache2 start
+```
+![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805200258.png]]
+
+Добавить в firewall на **r2** правила:
+1. Удаление правил в таблице filter
+2. Удаление правил в таблице "NAT"
+3. Отбрасывать все маршрутизируемые пакеты
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805201211.png]]
+
+- Проверка `ping r1 -> ws22`:
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805201500.png]]
+
+4. Разрешить маршрутизацию всех пакетов протокола **ICMP**
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805202132.png]]
+
+- Проверка `ping r1 -> ws22`:
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805202224.png]]
+
+**Добавить в файл ещё два правила:**
+
+5. Включить **SNAT**, а именно маскирование всех локальных **ip** из локальной сети, находящейся за **r2** (по обозначениям из **Части 5** - сеть **10.20.0.0**)
+6. Включить **DNAT** на 8080 порт машины **r2** и добавить к веб-серверу **Apache**, запущенному на **ws22**, доступ извне сети
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805211023.png]]
+
+**Запустить файл:** 
+
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805211114.png]]
+
+**Проверить соединение по TCP для SNAT**: `telnet ws22 --> r1`:
+```shell
+telnet 10.10.0.1 80
+```
+![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805211232.png]]
+
+**Проверить соединение по TCP для DNAT**: `telnet r1 --> ws22`:
+```shell
+telnet 10.20.0.1 8080
+```
+![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805211251.png]]
+
+---
+
+## Part 8. Дополнительно. Знакомство с **SSH Tunnels**
