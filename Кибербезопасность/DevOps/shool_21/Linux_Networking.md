@@ -564,25 +564,66 @@ sudo service apache2 start
 
 5. Включить **SNAT**, а именно маскирование всех локальных **ip** из локальной сети, находящейся за **r2** (по обозначениям из **Части 5** - сеть **10.20.0.0**)
 6. Включить **DNAT** на 8080 порт машины **r2** и добавить к веб-серверу **Apache**, запущенному на **ws22**, доступ извне сети
-   
-   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805211023.png]]
 
-**Запустить файл:** 
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807183911.png]]
 
-   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805211114.png]]
+   **Запустить файл:** 
+
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807183931.png]]
 
 **Проверить соединение по TCP для SNAT**: `telnet ws22 --> r1`:
-```shell
-telnet 10.10.0.1 80
-```
-![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805211232.png]]
+   ```shell
+   telnet 10.100.0.11 80
+   ```
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807183738.png]]
 
 **Проверить соединение по TCP для DNAT**: `telnet r1 --> ws22`:
-```shell
-telnet 10.20.0.1 8080
-```
-![[./assets_DO2_LinuxNetwork-1/Pasted image 20240805211251.png]]
+   ```shell
+   telnet 10.100.0.12 8080
+   ```
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807183647.png]]
 
 ---
 
 ## Part 8. Дополнительно. Знакомство с **SSH Tunnels**
+
+**Запустить на r2 фаервол с правилами из Части 7:**
+``` shell
+sudo bash ./etc/firewall.sh
+```
+
+**Запустить веб-сервер Apache на ws22 на localhost:**
+
+![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807155841.png]]
+
+**Воспользоваться _Local TCP forwarding_ с ws21 до ws22, чтобы получить доступ к веб-серверу на ws22 с ws21:**
+
+- На `ws21`, создадим локальную TCP переадресацию для доступа к веб-серверу на `ws22`:
+   ```shell
+   ssh -L 8080:localhost:80 [пользователь]@10.20.0.20
+   ```
+   Здесь `8080` — локальный порт на `ws21`, который будет перенаправлен на `localhost:80` на `ws22`.
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807160442.png]]
+
+**Воспользоваться _Remote TCP forwarding_ c ws11 до ws22, чтобы получить доступ к веб-серверу на ws22 с ws11**
+
+-  На `ws11`, создадим удалённую TCP переадресацию для доступа к веб-серверу на `ws22`:
+   ``` shell
+   ssh -L 8080:10.10.0.1:1234 [пользователь]@10.100.0.12
+   ```
+   Подключение происходит к **r2**, но с него уже есть доступ к службе **apach на 80 порту ws22**
+   
+   ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807191959.png]]
+   
+   Теперь всё работает.
+   
+**Проверка:**
+   ```shell
+   telnet 127.0.0.1 [локальный порт]
+   ```
+
+   1. **ws21:**
+      ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807161845.png]]
+   2. **ws11:** 
+       ![[./assets_DO2_LinuxNetwork-1/Pasted image 20240807192510.png]]
