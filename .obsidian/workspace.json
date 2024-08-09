@@ -13,33 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "eea5fc227ac135a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Кибербезопасность/DevOps/iptables & fail2ban.md",
+                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
                 "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6fa6da77c5674669",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
-                "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -120,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
+                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -137,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
+                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Linux_Networking.md"
+                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md"
               }
             }
           }
@@ -172,19 +148,22 @@
   },
   "active": "c0f466d44bc8810c",
   "lastOpenFiles": [
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240807195506.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809101541.png",
+    "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809105207.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809105059.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104700.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104554.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104539.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104528.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104345.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809103719.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809103537.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809103247.png",
     "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
-    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240807161845.png",
-    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240807192510.png",
-    "Кибербезопасность/DevOps/iptables & fail2ban.md",
-    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240807155841.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240807174056.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240807162550.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240807174220.png",
-    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240807191959.png",
-    "Кибербезопасность/DevOps/shool_21/Pasted image 20240807155305.png",
-    "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1/Pasted image 20240805211114.png",
     "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker",
+    "Кибербезопасность/DevOps/iptables & fail2ban.md",
     "Кибербезопасность/Сетевые атаки/Nmap.md",
     "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
     "Кибербезопасность/DevOps/shool_21/Pasted image 20240730213618.png.md",
@@ -210,13 +189,11 @@
     "Кибербезопасность/DevOps/Файлы  UNIX.md",
     "Кибербезопасность/DevOps/assets",
     "Кибербезопасность/DevOps/update shell && create server && create connect.md",
-    "Кибербезопасность/Сканирование сети/Разведка/theHarvester.md",
     "Кибербезопасность/Сканирование сети/Разведка/assets",
     "Кибербезопасность/Сканирование сети/Разведка",
     "Кибербезопасность/Сканирование сети/Сетевые атаки/Альтернативы Nmap/Без названия",
     "Кибербезопасность/Сетевые атаки/Альтернативы Nmap/assets",
     "Кибербезопасность/Сетевые атаки/Альтернативы Nmap",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Mobile scanners",
     "Кибербезопасность/Реверс инженеринг/Без названия.canvas",
     "Без названия.canvas"
   ]
