@@ -8,14 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c0f466d44bc8810c",
+            "id": "b378db363e2c17d8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
-                "mode": "preview",
-                "source": true
+                "file": "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810174809.png"
               }
             }
           }
@@ -96,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
+                "file": "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810174809.png",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
+                "file": "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810174809.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md"
+                "file": "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810174809.png"
               }
             }
           }
@@ -146,20 +144,19 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "c0f466d44bc8810c",
+  "active": "fb70872d9f9d1a5d",
   "lastOpenFiles": [
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809101541.png",
     "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809105207.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809105059.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104700.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104554.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104539.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104528.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809104345.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809103719.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809103537.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240809103247.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810185725.png",
+    "Кибербезопасность/DevOps/shool_21/Pasted image 20240810184233.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810185705.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810182548.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810182332.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810182103.png",
+    "Кибербезопасность/DevOps/shool_21/Pasted image 20240810182037.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810181803.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810181706.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810181451.png",
     "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
     "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker",
