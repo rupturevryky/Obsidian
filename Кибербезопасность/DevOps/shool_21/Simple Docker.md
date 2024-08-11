@@ -157,3 +157,41 @@ docker restart [container_id|container_name]
 12. **Проверь, что по адресу `localhost:80/status` отдается страничка со статусом сервера nginx**:
    
    ![[./assets_D05_SimpleDocker/Pasted image 20240810185705.png]]
+
+---
+
+## Part 3. Мини веб-сервер
+
+**`hello_page.c`:**
+
+![[Pasted image 20240811222502.png]]
+
+> Установка зависимостей:
+>
+> ```shell
+> sudo apt install libfcgi-dev
+> sudo apt install spawn-fcgi
+> ```
+
+> Компиляция файла:
+> 
+> ```shell
+> gcc hello_page.c -o hello_page -lfcgi 
+> ```
+
+**Запуск мини-сервер через `spawn-fcgi` на порту `8080`:**
+``` 
+spawn-fcgi -p 8080 ./hello_page 
+```
+![[Pasted image 20240811222550.png]]
+
+**Конфигурация Nginx:**
+
+![[Pasted image 20240811222612.png]]
+```
+sudo nginx -s reload
+```
+
+Браузер:
+
+![[Pasted image 20240811222639.png]]
