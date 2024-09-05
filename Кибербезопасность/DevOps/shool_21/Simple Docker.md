@@ -164,7 +164,7 @@ docker restart [container_id|container_name]
 
 **`hello_page.c`:**
 
-![[Pasted image 20240811222502.png]]
+![[./assets_D05_SimpleDocker/Pasted image 20240811222502.png]]
 
 > Установка зависимостей:
 >
@@ -180,18 +180,122 @@ docker restart [container_id|container_name]
 > ```
 
 **Запуск мини-сервер через `spawn-fcgi` на порту `8080`:**
-``` 
+``` shell
 spawn-fcgi -p 8080 ./hello_page 
 ```
-![[Pasted image 20240811222550.png]]
+![[./assets_D05_SimpleDocker/Pasted image 20240811222550.png]]
 
 **Конфигурация Nginx:**
 
-![[Pasted image 20240811222612.png]]
-```
+![[./assets_D05_SimpleDocker/Pasted image 20240811222612.png]]
+```shell
 sudo nginx -s reload
 ```
 
 Браузер:
 
-![[Pasted image 20240811222639.png]]
+![[./assets_D05_SimpleDocker/Pasted image 20240811222639.png]]
+
+---
+
+## Part 4. Свой докер
+
+```dockerfile
+# Используем базовый образ с установленным Nginx
+FROM nginx
+
+# Копируем исходный код приложения в контейнер
+COPY ./server/hello_page.c /usr/src/hello.c
+COPY ./server/start_server.sh /usr/src/start_server.sh
+# Копируем конфигурационный файл nginx внутрь контейнера
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
+
+# Устанавливаем необходимые пакеты для сборки FastCGI приложения
+RUN apt-get update && apt-get install -y gcc spawn-fcgi libfcgi-dev
+
+# Запуск
+ENTRYPOINT ["bash", "/usr/src/start_server.sh"]
+```
+
+```nginx.conf
+user  nginx;
+worker_processes  auto;
+
+error_log  /var/log/nginx/error.log notice;
+pid        /var/run/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    #include /etc/nginx/conf.d/*.conf;  # this is commented (!)
+
+    server {
+        listen 81;  # http://nginx.org/en/docs/http/ngx_http_core_module.html#listen
+        location / {
+            fastcgi_pass localhost:8080;  # https://nginx.org/ru/docs/http/ngx_http_fastcgi_module.html#fastcgi_pass
+        }
+        location /status {
+            stub_status on;
+        }
+    }
+}
+
+```
+
+Сборка **Docker** образа:
+> Перейти в директорию, содержащую `Dockerfile` и папки `nginx`, `server`
+```shell
+#!/usr/bin/env bash
+
+docker build . -t server:v2
+
+docker images
+
+docker run --rm -d -p 80:81 -v ./nginx:/etc/nginx --name server2 server:v2
+
+printf "The sever is up. Press <Enter> to stop it.\n"
+read -p "Time to stop? " -r
+
+docker stop server2
+```
+
+Эта команда запускает контейнер в фоновом режиме (`-d`), маппит порт 80 на хосте к порту 80 в контейнере (`-p 80:80`), и маппит текущую папку `./nginx` в папку `/etc/nginx` внутри контейнера.
+
+![[./assets_D05_SimpleDocker/Pasted image 20240901120653.png]]
+
+**Проверка доступа к серверу.**
+
+Теперь можно проверить доступность сервера на `http://localhost:80`:
+- Перейдите по `http://localhost:80` в браузере, чтобы увидеть страницу "Hello World!".
+- Перейдите по `http://localhost:80/status` для получения статуса Nginx.
+
+![[./assets_D05_SimpleDocker/Pasted image 20240901120900.png]]
+
+![[./assets_D05_SimpleDocker/Pasted image 20240810185705.png]]
+
+**Изменение конфигурации Nginx.**
+
+Чтобы внести изменения в конфигурацию Nginx, отредактируйте файл `./nginx/nginx.conf`. После сохранения файла, перезапустите контейнер:
+```shell
+docker restart <container_id>
+```
