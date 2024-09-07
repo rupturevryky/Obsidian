@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/DevOps/update shell && create server && create connect.md",
+                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/DevOps/update shell && create server && create connect.md",
+                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/DevOps/update shell && create server && create connect.md",
+                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/DevOps/update shell && create server && create connect.md"
+                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md"
               }
             }
           }
@@ -146,8 +146,12 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "717f69ec7eef813d",
+  "active": "fb70872d9f9d1a5d",
   "lastOpenFiles": [
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907172833.png",
+    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907144931.png",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/theHarvester.md",
+    "Кибербезопасность/DevOps/update shell && create server && create connect.md",
     "Кибербезопасность/Reverse инженеринг/Инструментарий.md",
     "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
     "assets_D05_SimpleDocker/Pasted image 20240810185705.md",
@@ -155,7 +159,6 @@
     "Кибербезопасность/Другие источники для хакинга.md",
     "Кибербезопасность/Сетевые атаки/Active Directory/Leaked Wallpaper (повышение привелегий).md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/Snoop.md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/theHarvester.md",
     "Кибербезопасность/Инструментарий.md",
     "Кибербезопасность/Техники/Сокрытие шела",
     "Кибербезопасность/Фишинг.md",
@@ -178,7 +181,6 @@
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240811222502.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810185725.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810182332.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810182548.png",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/sn0it.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/reconspider.md",
     "Кибербезопасность/Сканирование сети/Разведка/nslookup.md",
@@ -188,8 +190,6 @@
     "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker",
     "Кибербезопасность/DevOps/iptables & fail2ban.md",
-    "Кибербезопасность/Сетевые атаки/Nmap.md",
-    "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
     "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1",
     "Кибербезопасность/DevOps/shool_21",
     "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1",

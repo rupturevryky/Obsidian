@@ -299,3 +299,126 @@ docker stop server2
 ```shell
 docker restart <container_id>
 ```
+
+---
+
+## Part 5. **Dockle**
+
+Проверка до исправления:
+
+![[./assets_D05_SimpleDocker/Pasted image 20240907144931.png]]
+
+Исправление:
+```dockerfile
+# Используем базовый образ Debian
+FROM debian:bookworm-slim
+
+# Обновляем пакеты и устанавливаем необходимые зависимости, включая NGINX
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    nginx curl gcc spawn-fcgi libfcgi-dev build-essential && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    useradd mini_serv; \
+    chown -R mini_serv:mini_serv /etc/nginx/nginx.conf; \
+    chown -R mini_serv:mini_serv /var/cache/nginx; \
+    chown -R mini_serv:mini_serv /home/; \
+    chown -R mini_serv:mini_serv /var/log/nginx /var/lib/nginx; \
+    touch /var/run/nginx.pid && chown -R mini_serv:mini_serv /var/run/nginx.pid; \
+    chmod u-s /usr/bin/gpasswd; \
+    chmod u-s /usr/bin/chsh; \
+    chmod u-s /usr/bin/chfn; \
+    chmod g-s /usr/bin/expiry; \
+    chmod u-s /usr/bin/passwd; \
+    chmod g-s /sbin/unix_chkpwd; \
+    chmod g-s /usr/bin/chage; \
+    chmod g-s /usr/bin/wall; \
+    chmod u-s /bin/umount; \
+    chmod u-s /bin/mount; \
+    chmod u-s /usr/bin/newgrp; \
+    chmod u-s /bin/su; \
+    chmod u-s /usr/bin/chsh;
+
+WORKDIR /home/
+# Копируем файлы
+COPY ./hello_page.c ./hello.c
+COPY ./start_server.sh .
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
+# Переключаемся на пользователя mini_serv для запуска NGINX
+USER mini_serv
+
+# Определяем команду запуска
+ENTRYPOINT ["bash", "./start_server.sh"]
+```
+
+``` nginx.conf
+worker_processes  auto;
+
+error_log  /var/log/nginx/error.log notice;
+pid        /var/run/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    #include /etc/nginx/conf.d/*.conf;  # this is commented (!)
+
+    server {
+        listen 81;  # http://nginx.org/en/docs/http/ngx_http_core_module.html#listen
+        location / {
+            fastcgi_pass localhost:8080;  # https://nginx.org/ru/docs/http/ngx_http_fastcgi_module.html#fastcgi_pass
+        }
+        location /status {
+            stub_status on;
+        }
+    }
+}
+```
+```start_server.sh
+#!/usr/bin/env bash
+
+
+gcc ./hello.c -l fcgi -o ./fcgi_server
+spawn-fcgi -p 8080 ./fcgi_server
+nginx -g 'daemon off;'
+nginx -s reload
+
+```
+
+Итог:
+
+![[./assets_D05_SimpleDocker/Pasted image 20240907172833.png]]
+
+(команды)
+``` shell
+docker build . -t server:v3
+```
+```shell
+dockle -ak NGINX_GPGKEY -ak NGINX_GPGKEY_PATH server:v3
+```
+```shell
+docker run --rm -it -d -p 80:81 --name server3 server:v3
+```
+```shell
+docker stop server3
+```
