@@ -422,3 +422,81 @@ docker run --rm -it -d -p 80:81 --name server3 server:v3
 ```shell
 docker stop server3
 ```
+
+---
+
+## Part 6. Базовый **Docker Compose**
+
+```docker_compose.yml
+version: "3.9"
+
+services:
+  mini_serv:
+    image: server:v4
+    build: ../part_5
+    container_name: server4
+
+  nginxer:
+    image: nginx:latest
+    container_name: nginxer
+    ports:
+      - 80:8080
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+```
+```nginx.conf
+user  nginx;
+worker_processes  auto;
+
+error_log  /var/log/nginx/error.log notice;
+pid        /var/run/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;
+
+    sendfile        on;
+    #tcp_nopush     on;
+
+    keepalive_timeout  65;
+
+    #gzip  on;
+
+    #include /etc/nginx/conf.d/*.conf;  # this is commented (!)
+
+    server {
+        listen 8080;
+        location / {
+            proxy_pass http://server4:81;
+        }
+        location /status {
+            stub_status on;
+        }
+    }
+}
+```
+
+Запуск сборки:
+
+``` shell
+docker-compose build
+```
+```shell
+docker-compose up
+```
+
+Проверка:
+
+![[./assets_D05_SimpleDocker/Pasted image 20240909162317.png]]
