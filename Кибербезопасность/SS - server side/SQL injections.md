@@ -163,3 +163,5 @@ _token=NX6KOxDfLMuybJ3qXJh69reEQvm2aNkfNxeSui9U&email=qwelab
 За­тем можете заг­лянуть на сайт PortSwigger и прой­ти «путь» [SQL injection](https://portswigger.net/web-security/learning-paths/sql-injection "SQL injection"). Сра­зу пре­дуп­реждаю, что он слож­ный и даже очень слож­ный для нович­ка, но там вез­де при­веде­ны отве­ты. Луч­ше в них не смот­реть сра­зу, но, если вдруг зас­тря­нете, они выручат.
 
 Еще могу пореко­мен­довать две очень инте­рес­ные лабора­тор­ные работы с пло­щад­ки Hack The Box: PC и Magic или хотя бы те их час­ти, что свя­заны с ата­ками на веб и получе­нием поль­зователь­ско­го фла­га (повыше­ние при­виле­гий в Linux можете пока не тро­гать).
+
+Также отличный ресурс: [SQL injection challenge (hackerdom.ru)](https://sql.training.hackerdom.ru/). ([подсказки](https://forum.antichat.club/threads/423579/page-2))

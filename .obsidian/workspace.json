@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
+                "file": "Кибербезопасность/SS - server side/SSRF.md",
                 "mode": "preview",
                 "source": true
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
+                "file": "Кибербезопасность/SS - server side/SSRF.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
+                "file": "Кибербезопасность/SS - server side/SSRF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/DevOps/shool_21/Simple Docker.md"
+                "file": "Кибербезопасность/SS - server side/SSRF.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "717f69ec7eef813d",
   "lastOpenFiles": [
+    "Кибербезопасность/Техники/Bruteforce/Словари.md",
+    "Кибербезопасность/SS - server side/SQL injections.md",
+    "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240909162317.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907172833.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907144931.png",
@@ -169,7 +172,6 @@
     "Кибербезопасность/Сетевые атаки/Active Directory/Crackmapexec.md",
     "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
     "Кибербезопасность/Сетевые атаки/Active Directory/Invoke-ADEnum.md",
-    "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
     "Кибербезопасность/Сетевые атаки/Active Directory",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240901120653.png",
     "assets_D05_SimpleDocker",
@@ -180,7 +182,6 @@
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240901120900.png",
     "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240811222502.png",
-    "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240810185725.png",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/sn0it.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/reconspider.md",
     "Кибербезопасность/Сканирование сети/Разведка/nslookup.md",
@@ -189,7 +190,6 @@
     "Кибербезопасность/DevOps/Администрирование Linux.md",
     "Кибербезопасность/DevOps/shool_21/Администрирование Ubuntu Server 20.04 LTS.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker",
-    "Кибербезопасность/DevOps/iptables & fail2ban.md",
     "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1",
     "Кибербезопасность/DevOps/shool_21",
     "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1",
