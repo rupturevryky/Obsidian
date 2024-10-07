@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/Техники/Web vulnerabitiry.md",
+                "file": "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
                 "mode": "source",
                 "source": true
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/Техники/Web vulnerabitiry.md",
+                "file": "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/Техники/Web vulnerabitiry.md",
+                "file": "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/Техники/Web vulnerabitiry.md"
+                "file": "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md"
               }
             }
           }
@@ -148,16 +148,27 @@
   },
   "active": "717f69ec7eef813d",
   "lastOpenFiles": [
-    "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Snoop.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/sn0it.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Uscrapper.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/BBOT.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/BBOT.md",
+    "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/CMS scanners/DROOPESCAN.md",
+    "Кибербезопасность/Техники/Bruteforce/URL.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/Whatweb.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/Metasploit.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/theHarvester.md",
     "Кибербезопасность/Техники/Web vulnerabitiry.md",
+    "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
     "Кибербезопасность/SS - server side/SSRF.md",
     "Кибербезопасность/Техники/Bruteforce/Словари.md",
     "Кибербезопасность/SS - server side/SQL injections.md",
-    "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240909162317.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907172833.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907144931.png",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/theHarvester.md",
     "Кибербезопасность/DevOps/update shell && create server && create connect.md",
     "Кибербезопасность/Reverse инженеринг/Инструментарий.md",
     "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
@@ -165,16 +176,9 @@
     "Стороннее/Docker.md",
     "Кибербезопасность/Другие источники для хакинга.md",
     "Кибербезопасность/Сетевые атаки/Active Directory/Leaked Wallpaper (повышение привелегий).md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Snoop.md",
     "Кибербезопасность/Инструментарий.md",
     "Кибербезопасность/Техники/Сокрытие шела",
-    "Кибербезопасность/Фишинг.md",
     "Кибербезопасность/Техники",
-    "Кибербезопасность/Сетевые атаки/xfreedp.md",
-    "Кибербезопасность/Сетевые атаки/Active Directory/kerbrute.md",
-    "Кибербезопасность/Сетевые атаки/Active Directory/Crackmapexec.md",
-    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
-    "Кибербезопасность/Сетевые атаки/Active Directory/Invoke-ADEnum.md",
     "Кибербезопасность/Сетевые атаки/Active Directory",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240901120653.png",
     "assets_D05_SimpleDocker",
@@ -184,16 +188,11 @@
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240811222639.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240901120900.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240811222502.png",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/sn0it.md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/reconspider.md",
-    "Кибербезопасность/Сканирование сети/Разведка/nslookup.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks",
-    "Кибербезопасность/Сканирование сети/Разведка/определение всей зоны DNS.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker",
     "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1",
     "Кибербезопасность/DevOps/shool_21",
     "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1",
-    "Кибербезопасность/DevOps/assets",
     "Кибербезопасность/Реверс инженеринг/Без названия.canvas",
     "Без названия.canvas"
   ]
