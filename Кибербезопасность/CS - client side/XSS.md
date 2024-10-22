@@ -13,6 +13,24 @@
 > [[XSS#Mutation XSS|8. Mutation XSS]]
 > [[XSS#Bliend XSS|9. Bliend XSS]]
 ***
+
+## Формы отправки запросов JS
+
+``` html
+<script>
+	fetch('https://site.com/', {method: "GET"}) // обычный GET запрос
+</script>
+```
+``` html
+<script>
+	const req = new XMLHttpRequest()
+	req.open("GET", "https://site.com/")
+	req.send() // обычный GET запрос
+</script>
+```
+
+---
+
 # XSS в HTML атрибутах
 
 [portswigger.net/XSS/cheat-sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)

@@ -13,13 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
+                "file": "Кибербезопасность/Burp Suite.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Burp Suite"
+            }
+          },
+          {
+            "id": "18e096735b47d5c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Введение.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Введение"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -39,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
             }
           },
           {
@@ -54,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
             }
           },
           {
@@ -62,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
             }
           }
         ]
@@ -87,7 +110,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
             }
           },
           {
@@ -96,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
+                "file": "Кибербезопасность/Reverse инженеринг + PWN/Инструментарий.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +129,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Инструментарий"
             }
           },
           {
@@ -113,10 +140,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
+                "file": "Кибербезопасность/Reverse инженеринг + PWN/Инструментарий.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Инструментарий"
             }
           },
           {
@@ -125,8 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md"
-              }
+                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Введение.md"
+              },
+              "icon": "lucide-list",
+              "title": "Структура Введение"
             }
           }
         ],
@@ -146,37 +177,38 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "717f69ec7eef813d",
+  "active": "18e096735b47d5c4",
   "lastOpenFiles": [
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Инструментарий.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/Back-Me-Up.md",
+    "Кибербезопасность/Техники/Web vulnerabitiry.md",
+    "Кибербезопасность/Техники/Bruteforce/Пароли.md",
+    "Кибербезопасность/Техники/Bruteforce/URL.md",
+    "Кибербезопасность/Техники/Bruteforce/Словари.md",
+    "Кибербезопасность/Burp Suite.md",
+    "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
+    "Кибербезопасность/Reverse инженеринг + PWN/Инструментарий.md",
+    "Кибербезопасность/Reverse инженеринг + PWN/Введение.md",
+    "Кибербезопасность/SS - server side/SSRF.md",
+    "Кибербезопасность/CS - client side/CSRF.md",
+    "Кибербезопасность/CS - client side/CORS.md",
+    "Кибербезопасность/CS - client side/XSS.md",
+    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Snoop.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/sn0it.md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/Uscrapper.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/BBOT.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/BBOT.md",
     "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/CMS scanners/DROOPESCAN.md",
-    "Кибербезопасность/Техники/Bruteforce/URL.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/Whatweb.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/Metasploit.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/theHarvester.md",
-    "Кибербезопасность/Техники/Web vulnerabitiry.md",
-    "Кибербезопасность/DevOps/shool_21/Linux_Networking.md",
-    "Кибербезопасность/SS - server side/SSRF.md",
-    "Кибербезопасность/Техники/Bruteforce/Словари.md",
-    "Кибербезопасность/SS - server side/SQL injections.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240909162317.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907172833.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907144931.png",
-    "Кибербезопасность/DevOps/update shell && create server && create connect.md",
-    "Кибербезопасность/Reverse инженеринг/Инструментарий.md",
-    "Кибербезопасность/Повышение привелегий/Алгоритм действий.md",
-    "assets_D05_SimpleDocker/Pasted image 20240810185705.md",
-    "Стороннее/Docker.md",
-    "Кибербезопасность/Другие источники для хакинга.md",
-    "Кибербезопасность/Сетевые атаки/Active Directory/Leaked Wallpaper (повышение привелегий).md",
-    "Кибербезопасность/Инструментарий.md",
     "Кибербезопасность/Техники/Сокрытие шела",
     "Кибербезопасность/Техники",
     "Кибербезопасность/Сетевые атаки/Active Directory",
