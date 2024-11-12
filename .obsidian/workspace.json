@@ -4,39 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "764a7a4e1e6f56dd",
+        "id": "66631721572aa5a3",
         "type": "tabs",
         "children": [
           {
-            "id": "717f69ec7eef813d",
+            "id": "0929551bd616afd3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Кибербезопасность/Burp Suite.md",
+                "file": "Кибербезопасность/SS - server side/Path Traversal, LFI, RFI.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Burp Suite"
+              "title": "Path Traversal, LFI, RFI"
             }
           },
           {
-            "id": "18e096735b47d5c4",
+            "id": "de17163e3e4de7f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Введение.md",
-                "mode": "preview",
-                "source": true
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
               "title": "Введение"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -67,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "smbclient",
+                "query": "brutef",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -154,10 +153,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Введение.md"
+                "file": "Кибербезопасность/SS - server side/Path Traversal, LFI, RFI.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Введение"
+              "title": "Структура Path Traversal, LFI, RFI"
             }
           }
         ],
@@ -177,19 +176,27 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "18e096735b47d5c4",
+  "active": "0929551bd616afd3",
   "lastOpenFiles": [
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Инструментарий.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/Back-Me-Up.md",
-    "Кибербезопасность/Техники/Web vulnerabitiry.md",
-    "Кибербезопасность/Техники/Bruteforce/Пароли.md",
-    "Кибербезопасность/Техники/Bruteforce/URL.md",
-    "Кибербезопасность/Техники/Bruteforce/Словари.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Введение.md",
+    "Кибербезопасность/SS - server side/Path Traversal, LFI, RFI.md",
+    "Кибербезопасность/SS - server side/File upload.md",
     "Кибербезопасность/Burp Suite.md",
+    "Кибербезопасность/DevOps/Администрирование Linux.md",
+    "Кибербезопасность/DevOps/Передача файлов.md",
+    "Кибербезопасность/Техники/Bruteforce/URL.md",
+    "Кибербезопасность/Техники/Bruteforce/Пароли.md",
+    "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners & Web vulnerability/Web vulnerabilitys - help.md",
+    "Кибербезопасность/SS - server side/SSRF.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners & Web vulnerability/Web vulnerability",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Инструментарий.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners & Web vulnerability/Back-Me-Up.md",
+    "Кибербезопасность/Техники/Web vulnerabitiry.md",
+    "Кибербезопасность/Техники/Bruteforce/Словари.md",
     "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
     "Кибербезопасность/Reverse инженеринг + PWN/Инструментарий.md",
     "Кибербезопасность/Reverse инженеринг + PWN/Введение.md",
-    "Кибербезопасность/SS - server side/SSRF.md",
     "Кибербезопасность/CS - client side/CSRF.md",
     "Кибербезопасность/CS - client side/CORS.md",
     "Кибербезопасность/CS - client side/XSS.md",
@@ -199,13 +206,6 @@
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/sn0it.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/Uscrapper.md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/BBOT.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/BBOT.md",
-    "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/CMS scanners/DROOPESCAN.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/Whatweb.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners/Metasploit.md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/theHarvester.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240909162317.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907172833.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907144931.png",
@@ -224,7 +224,6 @@
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker",
     "Кибербезопасность/DevOps/shool_21/assets_DO2_LinuxNetwork-1",
     "Кибербезопасность/DevOps/shool_21",
-    "Кибербезопасность/DevOps/shool_21/assets_D01_Linux-1",
     "Кибербезопасность/Реверс инженеринг/Без названия.canvas",
     "Без названия.canvas"
   ]
