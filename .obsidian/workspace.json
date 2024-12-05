@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "f9ce9e96b65867cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/network scanners/Sn1per.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Sn1per"
+            }
+          },
+          {
             "id": "de17163e3e4de7f0",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "Введение"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Кибербезопасность/SS - server side/Path Traversal, LFI, RFI.md"
+                "file": "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/network scanners/Sn1per.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Path Traversal, LFI, RFI"
+              "title": "Структура Sn1per"
             }
           }
         ],
@@ -176,9 +191,23 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "0929551bd616afd3",
+  "active": "f9ce9e96b65867cd",
   "lastOpenFiles": [
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/BBOT.md",
+    "Кибербезопасность/Взлом устройства человека.md",
+    "Кибербезопасность/Другие источники для хакинга.md",
+    "Кибербезопасность/Инструментарий.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/sn0it.md",
+    "Кибербезопасность/Сканирование сети/Разведка/frameworks/reconFTW.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Введение.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Инструментарий.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/network scanners/Nuclei.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners & Web vulnerability/Vega.md",
+    "Кибербезопасность/Сканирование сети/Сети/Сканирование сети - основа.md",
+    "Кибербезопасность/Сканирование сети/Сети/API.md",
+    "Кибербезопасность/Сканирование сети/Сети/NAT.md",
+    "Кибербезопасность/Сканирование сети/Сети/Порты.md",
+    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners & Web vulnerability/Web vulnerabilitys - help.md",
     "Кибербезопасность/SS - server side/Path Traversal, LFI, RFI.md",
     "Кибербезопасность/SS - server side/File upload.md",
     "Кибербезопасность/Burp Suite.md",
@@ -187,25 +216,11 @@
     "Кибербезопасность/Техники/Bruteforce/URL.md",
     "Кибербезопасность/Техники/Bruteforce/Пароли.md",
     "Кибербезопасность/DevOps/shool_21/Simple Docker.md",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners & Web vulnerability/Web vulnerabilitys - help.md",
     "Кибербезопасность/SS - server side/SSRF.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners & Web vulnerability/Web vulnerability",
-    "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Инструментарий.md",
     "Кибербезопасность/Сканирование сети/Сканирование уязвимостей/Web scanners & Web vulnerability/Back-Me-Up.md",
     "Кибербезопасность/Техники/Web vulnerabitiry.md",
-    "Кибербезопасность/Техники/Bruteforce/Словари.md",
-    "Кибербезопасность/Сканирование сети/Сети/Локальные адреса.md",
-    "Кибербезопасность/Reverse инженеринг + PWN/Инструментарий.md",
-    "Кибербезопасность/Reverse инженеринг + PWN/Введение.md",
-    "Кибербезопасность/CS - client side/CSRF.md",
-    "Кибербезопасность/CS - client side/CORS.md",
-    "Кибербезопасность/CS - client side/XSS.md",
-    "Кибербезопасность/Сканирование сети/Сети/Протоколы.md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Slash.md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму/Snoop.md",
     "Кибербезопасность/Сканирование сети/Разведка/frameworks/Поиск по никнейму",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/sn0it.md",
-    "Кибербезопасность/Сканирование сети/Разведка/frameworks/Uscrapper.md",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240909162317.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907172833.png",
     "Кибербезопасность/DevOps/shool_21/assets_D05_SimpleDocker/Pasted image 20240907144931.png",
