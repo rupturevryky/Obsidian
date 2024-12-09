@@ -1,5 +1,7 @@
 ***
 [PayloadsAllTheThings/XSS Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection#cross-site-scripting)
+
+[kensworth/cookie-stealer: Simple PHP - Javascript - Webserver Cookie Stealer Script for XSS](https://github.com/kensworth/cookie-stealer)
 ***
 # Навигация
 
