@@ -1,3 +1,9 @@
+# Вступление
+
+CSRF атака возможна, если допущены ошибки в механизмах безопасности хранения cookie, генерации CSRF токена, защите через Referer.
+
+![[Pasted image 20250113212910.png]]
+
 # Exploiting cross-site scripting to steal cookies
 
 [PayloadsAllTheThings - XSS - data-grabber-for-xs](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection#data-grabber-for-xss)

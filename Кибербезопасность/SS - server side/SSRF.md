@@ -3,6 +3,7 @@
 **Подделка запросов на стороне сервера (SSRF)** — это критическая уязвимость безопасности, позволяющая злоумышленникам манипулировать запросами на стороне сервера и потенциально получать доступ к конфиденциальным ресурсам или выполнять вредоносные действия.
 
 Шаблоны атак: [PayloadsAllTheThings/Server Side Request Forgery](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery)
+Обходы валидации URL (Portswigger): [URL validation bypass cheat sheet for SSRF/CORS](https://portswigger.net/web-security/ssrf/url-validation-bypass-cheat-sheet)
 
 ---
 
