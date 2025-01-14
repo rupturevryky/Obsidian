@@ -14,7 +14,7 @@
 6. `adb shell content query --uri "content://myApp.SecretProvider/GetSecret/{конкретный id}"` . В таком случае, возможно, можно использовать SQLi. Если внутри "" добавить \\"...\\", можно внедрить SQLi.
 7. `adb logcat` - **Прочитать логи**
 8. `adb push file.txt /{директория для пуша}/file.txt` - запушить файл на устройство
-9. C:\\Users\\Rupturevryky\\AppData\\Local\\Android\\Sdk\\emulator> `.\emulator.exe -writable-system -avd Pixel_3a_API_34` - запустить с возможностью переписывать систему
+9.  `.\emulator.exe -writable-system -avd Pixel_3a_API_34` - запустить с возможностью переписывать систему
 ## JADX
 позволяет декомпилировать приложение .apk .В графическом интерфейсе просто выбирается .apk файл, в CLI следующая команда:
 1. `jadx myApp.apk`
