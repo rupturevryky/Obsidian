@@ -124,3 +124,11 @@ https://sute/file.pdf#any=javascript:alert(1)
 # Bliend XSS
 **Bliend XSS** - тип уязвимости, при котором вредоносный код внедряется в веб-приложение и сохраняется на сервере, но его выполнение происходит в другом месте, недоступном для атакующего. 
 Можно поднять у себя следующую службу: [XSS Hanter Express](https://github.com/mandatoryprogrammer/xsshunter-express), они служит отличный инструментом для эксплуатации **bliend XSS**.
+
+---
+
+### Прочие Payload-ы
+
+``` html
+<div style=background-image: url(javascript:alert(XSS))>
+```
