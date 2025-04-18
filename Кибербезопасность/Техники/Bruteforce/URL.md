@@ -123,6 +123,7 @@ dirsearch.py --url|-u http://www.hacktory.lab --extension|-e txt
 - `dirsearch.py` – исполняемый файл программы
 - `-u --url http://www.hacktory.lab/` - URL цели
 - `-e --extension txt` – поиск файлов с расширением txt
+- `-x 403,400,404` - исключить ответы
 
 Полный список опций и настроек Dirsearch: [https://kali.tools/?p=3189](https://kali.tools/?p=3189) .
 
