@@ -6,4 +6,4 @@
 ```
 где `userenum` - брутфорс юзернеймов, чтобы узнать валидные
 
-Может быть полезен smbclient: [[Протоколы#SMBMAP / SMBGET / SMBCLIENT]]
+Может быть полезен smbclient: [[Протоколы удалённого доступа#SMBMAP / SMBGET / SMBCLIENT]]
